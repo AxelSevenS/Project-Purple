@@ -1,0 +1,10 @@
+C:\Users\spagh\source\repos\Platformer\bin\Debug\Platformer.exe.config
+C:\Users\spagh\source\repos\Platformer\bin\Debug\Platformer.exe
+C:\Users\spagh\source\repos\Platformer\bin\Debug\Platformer.pdb
+C:\Users\spagh\source\repos\Platformer\obj\Debug\Platformer.csproj.AssemblyReference.cache
+C:\Users\spagh\source\repos\Platformer\obj\Debug\Platformer.Form1.resources
+C:\Users\spagh\source\repos\Platformer\obj\Debug\Platformer.Properties.Resources.resources
+C:\Users\spagh\source\repos\Platformer\obj\Debug\Platformer.csproj.GenerateResource.cache
+C:\Users\spagh\source\repos\Platformer\obj\Debug\Platformer.csproj.CoreCompileInputs.cache
+C:\Users\spagh\source\repos\Platformer\obj\Debug\Platformer.exe
+C:\Users\spagh\source\repos\Platformer\obj\Debug\Platformer.pdb
