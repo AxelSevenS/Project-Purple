@@ -1,0 +1,10 @@
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.csproj.AssemblyReference.cache
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.Properties.Resources.resources
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.csproj.GenerateResource.cache
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.csproj.CoreCompileInputs.cache
+C:\Users\spagh\source\repos\Plateformeur\bin\Debug\Plateformeur.exe.config
+C:\Users\spagh\source\repos\Plateformeur\bin\Debug\Plateformeur.exe
+C:\Users\spagh\source\repos\Plateformeur\bin\Debug\Plateformeur.pdb
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.Form1.resources
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.exe
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.pdb

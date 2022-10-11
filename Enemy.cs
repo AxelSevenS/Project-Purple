@@ -1,37 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Platformer
+using System.Windows.Forms;
+
+namespace Plateformeur
 {
-    public class Enemy : IDrawable
-    {
+    public class Enemy : Sprite
+    { 
 
-        private static SolidBrush enemyBrush = new SolidBrush(Color.Brown);
+        Point pointA;
+        Point pointB;
 
-        public Point position;
-        public Size size;
 
-        public Enemy(Point position, Size size)
+        public Enemy(PictureBox picture, Point pointA, Point pointB) : base(picture) 
         {
-            this.position = position;
-            this.size = size;
+            this.pointA = pointA;
+            this.pointB = pointB;
         }
-        
-        public Enemy(int x, int y, int sizeX, int sizeY) : this(new Point(x, y), new Size(sizeX, sizeY)) { }
 
-        public Enemy(Point position, int sizeX, int sizeY) : this(position, new Size(sizeX, sizeY)) { }
-
-        public Enemy(int x, int y, Size size) : this(new Point(x, y), size) { }
-
-
-        public void Draw(Graphics graphics)
+        public override void Update()
         {
-            Rectangle rec = new Rectangle(position, size);
-            graphics.FillRectangle(enemyBrush, rec);
+            if (Player.current.picture.Bounds.IntersectsWith(picture.Bounds))
+                Form1.current.Reset();
         }
 
     }

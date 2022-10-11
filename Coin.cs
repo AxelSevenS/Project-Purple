@@ -1,34 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Platformer
+using System.Windows.Forms;
+
+namespace Plateformeur
 {
-    public class Coin : IDrawable
+    public class Coin : Sprite
     {
 
-        private static SolidBrush coinBrush = new SolidBrush(Color.Yellow);
+        private bool enabled = true;
 
-        public static Size size = new Size(15, 15);
-        public Point position;
 
-        public Coin(Point position)
+        public Coin(PictureBox picture) : base(picture) { }
+
+        public override void Update()
         {
-            this.position = position;
+            if (enabled && Player.current.picture.Bounds.IntersectsWith(picture.Bounds))
+            {
+                Player.current.score++;
+                enabled = false;
+            }
+
+            picture.Visible = enabled;
         }
 
-        public Coin(int x, int y)
+        public override void Reset()
         {
-            this.position = new Point(x, y);
+            base.Reset();
+            enabled = true;
         }
 
-        public void Draw(Graphics graphics)
-        {
-            Rectangle rec = new Rectangle(position, size);
-            graphics.FillRectangle(coinBrush, rec);
-        }
     }
 }
