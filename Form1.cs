@@ -16,8 +16,10 @@ namespace Plateformeur
         public static Form1 current;
 
         private Player player;
-        private Enemy[] enemies;
-        private Coin[] coins;
+        private List<Enemy> enemies = new List<Enemy>();
+        private List<Coin> coins = new List<Coin>();
+        public List<PictureBox> walls = new List<PictureBox>();
+        public List<PictureBox> ground = new List<PictureBox>();
 
 
 
@@ -27,18 +29,35 @@ namespace Plateformeur
 
             InitializeComponent();
 
-
-            coins = new Coin[1]
+            foreach (Control control in this.Controls)
             {
-                new Coin(coinPicture1)
-            };
 
-            enemies = new Enemy[]
-            {
-                new Enemy(enemyPicture1, new Point(50, 50), new Point(100, 100))
-            };
+                if (control is PictureBox picture)
+                {
 
-            player = new Player(playerPicture);
+                    string tag = (string)picture.Tag;
+
+                    switch (tag)
+                    {
+                        case "Coin":
+                            coins.Add(new Coin(picture));
+                            break;
+                        case "Enemy":
+                            enemies.Add(new Enemy(picture));
+                            break;
+                        case "Wall":
+                            walls.Add(picture);
+                            break;
+                        case "Ground":
+                            ground.Add(picture);
+                            break;
+
+                    }
+
+                }
+            }
+
+            player = new Player(playerPicture, scoreLabel);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -47,32 +66,27 @@ namespace Plateformeur
         }
 
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-            Graphics g = e.Graphics;
-
-            g.Clear(Color.White);
-        }
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
-
             if (e.KeyCode == Keys.W || e.KeyCode == Keys.Z || e.KeyCode == Keys.Up || e.KeyCode == Keys.Space)
-                player.Jump();
+                player.jumpInput = true;
 
             if (e.KeyCode == Keys.A || e.KeyCode == Keys.Q || e.KeyCode == Keys.Left)
-                player.left = true;
+                player.leftInput = true;
             if (e.KeyCode == Keys.D || e.KeyCode == Keys.Right)
-                player.right = true;
+                player.rightInput = true;
         }
 
         private void OnKeyUp(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.W || e.KeyCode == Keys.Z || e.KeyCode == Keys.Up || e.KeyCode == Keys.Space)
+                player.jumpInput = false;
+
             if (e.KeyCode == Keys.A || e.KeyCode == Keys.Q || e.KeyCode == Keys.Left)
-                player.left = false;
+                player.leftInput = false;
             if (e.KeyCode == Keys.D || e.KeyCode == Keys.Right)
-                player.right = false;
+                player.rightInput = false;
         }
 
         private void OnUpdateTick(object sender, EventArgs e)
@@ -80,11 +94,11 @@ namespace Plateformeur
 
             player.Update();
 
-            foreach (Enemy enemy in enemies)
-                enemy?.Update();
-
             foreach (Coin coin in coins)
                 coin?.Update();
+
+            foreach (Enemy enemy in enemies)
+                enemy?.Update();
 
             // panel1.Refresh();
 
@@ -96,13 +110,18 @@ namespace Plateformeur
         public void Reset()
         {
 
-            foreach( Coin coin in coins)
+            foreach (Coin coin in coins)
                 coin?.Reset();
 
-            foreach ( Enemy enemy in enemies)
+            foreach (Enemy enemy in enemies)
                 enemy?.Reset();
 
             player?.Reset();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -9,14 +9,15 @@ namespace Plateformeur
     {
         public static Player current;
 
-
+        private Label scoreLabel;
         private int _score = 0;
 
 
 
         public int gravity;
+        private bool canJump;
 
-        public bool right, left;
+        public bool rightInput, leftInput, jumpInput;
 
 
 
@@ -26,34 +27,50 @@ namespace Plateformeur
             set
             {
                 _score = Math.Min(Math.Max(value, 0), 999);
-                Console.WriteLine("Score: " + _score);
+                scoreLabel.Text = $"Score : {_score}";
             }
         }
 
 
 
 
-        public Player(PictureBox picture) : base(picture) 
+        public Player(PictureBox picture, Label scoreLabel) : base(picture) 
         {
             current = this;
+            this.scoreLabel = scoreLabel;
+            score = 0;
         }
 
 
         public void Jump()
         {
-            const int jumpForce = -15;
+            if (!canJump) return;
+
+            const int jumpForce = -12;
             gravity = jumpForce;
         }
 
         public override void Update()
         {
             const int moveSpeed = 5;
-            const int fallSpeed = 10;
 
-            gravity += (gravity < fallSpeed ? 1 : 0);
+            int moveDirection = rightInput ? 1 : leftInput ? -1 : 0;
+            if ( picture.MovePicture(moveDirection * moveSpeed, gravity) )
+            {
+                gravity = 1;
 
-            int moveDirection = right ? 1 : left ? -1 : 0;
-            picture.MovePicture(moveDirection * moveSpeed, gravity);
+                canJump = true;
+            }
+            else
+            {
+                const int fallSpeed = 10;
+                gravity += (gravity < fallSpeed ? 1 : 0);
+
+                canJump = false;
+            }
+
+            if (jumpInput)
+                Jump();
         }
 
         public override void Reset()
