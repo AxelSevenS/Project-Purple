@@ -19,6 +19,7 @@ namespace Plateformeur
         private List<Enemy> enemies = new List<Enemy>();
         private List<Coin> coins = new List<Coin>();
         public List<PictureBox> walls = new List<PictureBox>();
+        public List<PictureBox> ceilings = new List<PictureBox>();
         public List<PictureBox> ground = new List<PictureBox>();
 
 
@@ -47,6 +48,9 @@ namespace Plateformeur
                             break;
                         case "Wall":
                             walls.Add(picture);
+                            break;
+                        case "Ceiling":
+                            ceilings.Add(picture);
                             break;
                         case "Ground":
                             ground.Add(picture);
@@ -94,13 +98,24 @@ namespace Plateformeur
 
             player.Update();
 
-            foreach (Coin coin in coins)
-                coin?.Update();
+            foreach (Coin coin in coins) 
+            {
+                if ( Utility.SqrDistance(coin.picture.Location, Player.current.picture.Location) > 1000 )
+                    continue;
 
-            foreach (Enemy enemy in enemies)
-                enemy?.Update();
+                coin.Interact();
+            }
 
-            // panel1.Refresh();
+            foreach (Enemy enemy in enemies) 
+            {
+
+                enemy.Update();
+                
+                if ( Utility.SqrDistance(enemy.picture.Location, Player.current.picture.Location) > 1000 )
+                    continue;
+
+                enemy.Interact();
+            }
 
         }
 
@@ -120,6 +135,16 @@ namespace Plateformeur
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

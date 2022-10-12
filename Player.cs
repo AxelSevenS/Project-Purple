@@ -54,8 +54,11 @@ namespace Plateformeur
         {
             const int moveSpeed = 5;
 
+            if (picture.OutOfBounds())
+                Form1.current.Reset();
+
             int moveDirection = rightInput ? 1 : leftInput ? -1 : 0;
-            if ( picture.MovePicture(moveDirection * moveSpeed, gravity) )
+            if ( picture.MovePictureWithCollision(moveDirection * moveSpeed, gravity, false) )
             {
                 gravity = 1;
 
@@ -64,7 +67,7 @@ namespace Plateformeur
             else
             {
                 const int fallSpeed = 10;
-                gravity += (gravity < fallSpeed ? 1 : 0);
+                gravity = Utility.MoveTowards(gravity, fallSpeed, 1);
 
                 canJump = false;
             }

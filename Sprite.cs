@@ -26,6 +26,8 @@ namespace Plateformeur
 
         public abstract void Update();
 
+        public virtual void Interact() {;}
+
         public virtual void Reset()
         {
             picture.Location = startPosition;

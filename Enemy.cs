@@ -33,18 +33,27 @@ namespace Plateformeur
         {
             const int speed = 3;
 
-            int movementDirection = toPointB ^ (pointB > pointA) ? -1 : 1;
-            int distanceToPoint = toPointB ? Math.Abs(pointB - picture.Left) : Math.Abs(pointA - picture.Left);
-            
-            picture.MovePicture(movementDirection * Math.Min(distanceToPoint, speed), 0);
-
+            picture.Left = Utility.MoveTowards(picture.Left, toPointB ? pointB : pointA, speed);
 
             // When the enemy reaches the targeted point, change target.
             if ((toPointB && picture.Bounds.Left == pointB) || (!toPointB && picture.Bounds.Left == pointA))
-                    toPointB = !toPointB;
+                toPointB = !toPointB;
 
+        }
+
+        public override void Interact()
+        {
             if (Player.current.picture.Bounds.IntersectsWith(picture.Bounds))
-                Form1.current.Reset();
+                return;
+
+            Form1.current.Reset();
+        }
+
+        public override void Reset()
+        {
+            base.Reset();
+            toPointB = true;
+            picture.Left = pointA;
         }
 
     }

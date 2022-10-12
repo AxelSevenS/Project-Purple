@@ -8,20 +8,32 @@ namespace Plateformeur
     public class Coin : Sprite
     {
 
-        private bool enabled = true;
+        private bool _enabled = true;
 
+
+        private bool enabled {
+            get => _enabled;
+            set
+            {
+                _enabled = value;
+                picture.Visible = value;
+            }
+        }
 
         public Coin(PictureBox picture) : base(picture) { }
 
         public override void Update()
         {
-            if (enabled && Player.current.picture.Bounds.IntersectsWith(picture.Bounds))
-            {
-                Player.current.score++;
-                enabled = false;
-            }
 
-            picture.Visible = enabled;
+        }
+
+        public override void Interact()
+        {
+            if ( !enabled || !Player.current.picture.Bounds.IntersectsWith(picture.Bounds) )
+                return;
+
+            Player.current.score++;
+            enabled = false;
         }
 
         public override void Reset()
