@@ -35,9 +35,9 @@ namespace Plateformeur
         }
 
 
-        public static bool MovePictureWithCollision(this PictureBox picture, int x, int y, bool collideWithBorders = true)
+        public static CollisionType MovePictureWithCollision(this PictureBox picture, int x, int y, bool collideWithBorders = true)
         {
-            
+            CollisionType collisionType = 0;
             bool grounded = false;
             Rectangle bounds = picture.Bounds;
 
@@ -60,10 +60,10 @@ namespace Plateformeur
                 // Collide with ground sprites
                 foreach (PictureBox ground in Form1.current.ground)
                 {
-                    if (ground.Bounds.IntersectsWith(bounds))
+                    if ( (picture.Bottom < ground.Bottom) && ground.Bounds.IntersectsWith(bounds) )
                     {
                         bounds.Y = ground.Top - picture.Size.Height;
-                        grounded = true;
+                        collisionType |= CollisionType.Bottom;
                         break;
                     }
                 }
@@ -75,6 +75,7 @@ namespace Plateformeur
                 if (wall.Bounds.IntersectsWith(bounds))
                 {
                     bounds.X = x > 0 ? wall.Left - picture.Size.Width : wall.Left + wall.Size.Width;
+                    collisionType |= x > 0 ? CollisionType.Right : CollisionType.Left;
                     break;
                 }
             }
@@ -85,12 +86,13 @@ namespace Plateformeur
                 if (ceiling.Bounds.IntersectsWith(bounds))
                 {
                     bounds.Y = ceiling.Top + ceiling.Size.Height;
+                    collisionType |= CollisionType.Top;
                     break;
                 }
             }
 
             picture.Bounds = bounds;
-            return grounded;
+            return collisionType;
         }
 
 
@@ -111,5 +113,13 @@ namespace Plateformeur
 
             picture.Bounds = bounds;
         }
+    }
+
+    public enum CollisionType
+    {
+        Top = 1, 
+        Bottom, 
+        Left, 
+        Right
     }
 }

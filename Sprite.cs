@@ -26,7 +26,7 @@ namespace Plateformeur
 
         public abstract void Update();
 
-        public virtual void Interact() {;}
+        public virtual void Interact(Player player) {;}
 
         public virtual void Reset()
         {

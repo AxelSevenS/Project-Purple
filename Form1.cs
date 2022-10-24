@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plateformeur.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,6 @@ namespace Plateformeur
         public static Form1 current;
 
         private Player player;
-        private List<Enemy> enemies = new List<Enemy>();
-        private List<Coin> coins = new List<Coin>();
         public List<PictureBox> walls = new List<PictureBox>();
         public List<PictureBox> ceilings = new List<PictureBox>();
         public List<PictureBox> ground = new List<PictureBox>();
@@ -30,7 +29,7 @@ namespace Plateformeur
 
             InitializeComponent();
 
-            foreach (Control control in this.Controls)
+            foreach (Control control in panel1.Controls)
             {
 
                 if (control is PictureBox picture)
@@ -41,10 +40,13 @@ namespace Plateformeur
                     switch (tag)
                     {
                         case "Coin":
-                            coins.Add(new Coin(picture));
+                            Coin.coins.Add(new Coin(picture));
                             break;
-                        case "Enemy":
-                            enemies.Add(new Enemy(picture));
+                        case "Goomba":
+                            Enemy.enemies.Add(new Goomba(picture));
+                            break;
+                        case "Koopa":
+                            Enemy.enemies.Add(new Koopa(picture));
                             break;
                         case "Wall":
                             walls.Add(picture);
@@ -98,23 +100,22 @@ namespace Plateformeur
 
             player.Update();
 
-            foreach (Coin coin in coins) 
+            foreach (Coin coin in Coin.coins) 
             {
                 if ( Utility.SqrDistance(coin.picture.Location, Player.current.picture.Location) > 1000 )
                     continue;
 
-                coin.Interact();
+                coin.Interact(player);
             }
 
-            foreach (Enemy enemy in enemies) 
+            foreach (Enemy enemy in Enemy.enemies) 
             {
-
                 enemy.Update();
-                
-                if ( Utility.SqrDistance(enemy.picture.Location, Player.current.picture.Location) > 1000 )
+
+                if (Utility.SqrDistance(enemy.picture.Location, Player.current.picture.Location) > 1000)
                     continue;
 
-                enemy.Interact();
+                enemy.Interact(player);
             }
 
         }
@@ -125,10 +126,10 @@ namespace Plateformeur
         public void Reset()
         {
 
-            foreach (Coin coin in coins)
+            foreach (Coin coin in Coin.coins)
                 coin?.Reset();
 
-            foreach (Enemy enemy in enemies)
+            foreach (Enemy enemy in Enemy.enemies)
                 enemy?.Reset();
 
             player?.Reset();

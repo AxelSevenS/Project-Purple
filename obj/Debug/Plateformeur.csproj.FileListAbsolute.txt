@@ -8,3 +8,4 @@ C:\Users\spagh\source\repos\Plateformeur\bin\Debug\Plateformeur.pdb
 C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.Form1.resources
 C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.exe
 C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.pdb
+C:\Users\spagh\source\repos\Plateformeur\obj\Debug\Plateformeur.csproj.SuggestedBindingRedirects.cache
