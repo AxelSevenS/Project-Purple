@@ -13,11 +13,13 @@ namespace Plateformeur
 
         public static List<Enemy> enemies = new List<Enemy>();
 
-        private bool toPointB = true;
+        protected bool toPointB = true;
         private int pointA;
         private int pointB;
 
         protected bool dead;
+
+        protected virtual int speed => 2;
 
 
         public Enemy(PictureBox picture, int pointA, int pointB) : base(picture) 
@@ -30,13 +32,16 @@ namespace Plateformeur
             Animation();
         }
 
-        public Enemy(PictureBox picture) : this(picture, picture.Left - 100 + picture.Width, picture.Left + 100 - picture.Width * 2)
+        public Enemy(PictureBox picture, int width) : this(picture, picture.Left - width + picture.Width, picture.Left + width - picture.Width * 2)
+        {
+        }
+
+        public Enemy(PictureBox picture) : this(picture, 100)
         {
         }
 
         protected void PositionCycle()
         {
-            const int speed = 3;
 
             picture.Left = Utility.MoveTowards(picture.Left, toPointB ? pointB : pointA, speed);
 

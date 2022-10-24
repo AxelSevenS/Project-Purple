@@ -38,7 +38,6 @@ namespace Plateformeur
         public static CollisionType MovePictureWithCollision(this PictureBox picture, int x, int y, bool collideWithBorders = true)
         {
             CollisionType collisionType = 0;
-            bool grounded = false;
             Rectangle bounds = picture.Bounds;
 
             if ( collideWithBorders )
@@ -46,21 +45,21 @@ namespace Plateformeur
                 bounds.X = Math.Min(Math.Max(picture.Left + x, 0), Form1.current.Size.Width - picture.Size.Width - 15);
                 bounds.Y = Math.Min(Math.Max(picture.Top + y, 0), Form1.current.Size.Height - picture.Size.Height - 35);
 
-                grounded = (bounds.Y + y > Form1.current.Size.Height - picture.Size.Height - 35);
+                // if (bounds.Y + y > Form1.current.Size.Height - picture.Size.Height - 35)
+                //     collisionType |= CollisionType.Bottom;
             }
             else 
             {
-                bounds.X = picture.Left + x;
-                bounds.Y = picture.Top + y;
+                bounds.X += x;
+                bounds.Y += y;
             }
-
-
-            if (!grounded && y > 0)
+            
+            if (collisionType == 0 && y > 0)
             {
                 // Collide with ground sprites
                 foreach (PictureBox ground in Form1.current.ground)
                 {
-                    if ( (picture.Bottom < ground.Bottom) && ground.Bounds.IntersectsWith(bounds) )
+                    if ((picture.Bottom < ground.Bottom) && ground.Bounds.IntersectsWith(bounds))
                     {
                         bounds.Y = ground.Top - picture.Size.Height;
                         collisionType |= CollisionType.Bottom;
@@ -90,6 +89,7 @@ namespace Plateformeur
                     break;
                 }
             }
+            
 
             picture.Bounds = bounds;
             return collisionType;
@@ -115,11 +115,12 @@ namespace Plateformeur
         }
     }
 
-    public enum CollisionType
+    [Flags]
+    public enum CollisionType : ushort
     {
-        Top = 1, 
-        Bottom, 
-        Left, 
-        Right
+        Top = 1,
+        Bottom = 2,
+        Left = 4,
+        Right = 8
     }
 }

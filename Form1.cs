@@ -37,28 +37,26 @@ namespace Plateformeur
 
                     string tag = (string)picture.Tag;
 
-                    switch (tag)
+                    if (tag == "Coin")
+                        Coin.coins.Add(new Coin(picture));
+                    else if (tag.Contains("Koopa"))
                     {
-                        case "Coin":
-                            Coin.coins.Add(new Coin(picture));
-                            break;
-                        case "Goomba":
-                            Enemy.enemies.Add(new Goomba(picture));
-                            break;
-                        case "Koopa":
-                            Enemy.enemies.Add(new Koopa(picture));
-                            break;
-                        case "Wall":
-                            walls.Add(picture);
-                            break;
-                        case "Ceiling":
-                            ceilings.Add(picture);
-                            break;
-                        case "Ground":
-                            ground.Add(picture);
-                            break;
-
+                        string[] split = tag.Split('_');
+                        int width = split.Length > 1 ? int.Parse(split[1]) : 100;
+                        Enemy.enemies.Add(new Koopa(picture, width));
                     }
+                    else if (tag.Contains("Goomba"))
+                    {
+                        string[] split = tag.Split('_');
+                        int width = split.Length > 1 ? int.Parse(split[1]) : 100;
+                        Enemy.enemies.Add(new Goomba(picture, width));
+                    }
+                    else if (tag == "Wall")
+                        walls.Add(picture);
+                    else if (tag == "Ceiling")
+                        ceilings.Add(picture);
+                    else if (tag == "Ground")
+                        ground.Add(picture);
 
                 }
             }
@@ -146,6 +144,11 @@ namespace Plateformeur
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox81_Click(object sender, EventArgs e)
         {
 
         }

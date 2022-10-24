@@ -71,11 +71,11 @@ namespace Plateformeur
 
             canJump = false;
 
-            if ((collision & CollisionType.Bottom) == CollisionType.Bottom || (collision & CollisionType.Top) == CollisionType.Top)
+            if (collision.HasFlag(CollisionType.Bottom) || collision.HasFlag(CollisionType.Top))
             {
                 gravity = 1;
 
-                if ((collision & CollisionType.Bottom) == CollisionType.Bottom)
+                if (collision.HasFlag(CollisionType.Bottom))
                 {
                     canJump = true;
                 }

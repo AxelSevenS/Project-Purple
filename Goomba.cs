@@ -14,6 +14,10 @@ namespace Plateformeur
         {
         }
 
+        public Goomba(PictureBox picture, int width) : base(picture, width)
+        {
+        }
+
         public Goomba(PictureBox picture) : base(picture)
         {
         }

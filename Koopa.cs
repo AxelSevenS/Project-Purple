@@ -15,7 +15,13 @@ namespace Plateformeur
         private int direction;
         private int gravity;
 
+        protected override int speed => 1;
+
         public Koopa(PictureBox picture, int pointA, int pointB) : base(picture, pointA, pointB)
+        {
+        }
+
+        public Koopa(PictureBox picture, int width) : base(picture, width)
         {
         }
 
@@ -25,10 +31,10 @@ namespace Plateformeur
 
         public override void Reset()
         {
-            base.Reset();
-            picture.Image = Resources.goomba1;
+            picture.Image = Resources.koopaRight1;
             inShell = false;
             direction = 0;
+            base.Reset();
         }
 
         protected override void AliveUpdate()
@@ -45,15 +51,15 @@ namespace Plateformeur
 
                 CollisionType collision = picture.MovePictureWithCollision(direction * 7, gravity, false);
 
-                bool hitRight = direction == 1 && (collision & CollisionType.Right) == CollisionType.Right;
-                bool hitLeft = direction == -1 && (collision & CollisionType.Left) == CollisionType.Left;
+                bool hitRight = direction == 1 && collision.HasFlag(CollisionType.Right);
+                bool hitLeft = direction == -1 && collision.HasFlag(CollisionType.Left);
                 if (hitRight || hitLeft)
                 {
                     direction = -direction;
                 }
 
 
-                if ((collision & CollisionType.Bottom) == CollisionType.Bottom || (collision & CollisionType.Top) == CollisionType.Top)
+                if (collision.HasFlag(CollisionType.Bottom) || collision.HasFlag(CollisionType.Top))
                 {
                     gravity = 1;
                 }
@@ -85,11 +91,18 @@ namespace Plateformeur
             {
                 if (inShell)
                 {
-                    picture.Image = Resources.goombaDead;
+                    picture.Image = Resources.koopaShell;
                 }
                 else
                 {
-                    picture.Image = animState ? Resources.goomba1 : Resources.goomba2;
+                    if (toPointB)
+                    {
+                        picture.Image = animState ? Resources.koopaRight1 : Resources.koopaRight2;
+                    }
+                    else
+                    {
+                        picture.Image = animState ? Resources.koopaLeft1 : Resources.koopaLeft2;
+                    }
                     animState = !animState;
                 }
                 await Task.Delay(200);

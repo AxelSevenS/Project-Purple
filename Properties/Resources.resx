@@ -121,20 +121,23 @@
   <data name="marioRight1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marioRight1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="marioRight3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marioRight3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goomba2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goomba2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marioRight0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marioRight0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="marioRight2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marioRight2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="marioLeftJump" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marioLeftJump.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marioRight0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marioRight0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marioLeft1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marioLeft1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marioLeft2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marioLeft2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="marioRightJump" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marioRightJump.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,22 +145,34 @@
   <data name="goombaDead" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goombaDead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marioLeft1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marioLeft1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="marioLeft3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marioLeft3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marioRight3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marioRight3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marioLeft0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marioLeft0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marioLeft2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marioLeft2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="goomba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goomba1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="goomba2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goomba2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marioLeft0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marioLeft0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marioLeft3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marioLeft3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koopaLeft1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koopaLeft1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koopaLeft2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koopaLeft2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koopaRight1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koopaRight1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koopaRight2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koopaRight2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koopaShell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koopaShell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
