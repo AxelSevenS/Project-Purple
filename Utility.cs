@@ -23,7 +23,7 @@ namespace Plateformeur
 
         public static bool OutOfBounds(this PictureBox picture)
         {
-            return picture.Top > Form1.current.Size.Height - picture.Size.Height - 35 || picture.Left > Form1.current.Size.Width - picture.Size.Width - 15 || picture.Left < 0 || picture.Top < 0;; 
+            return picture.Top > LevelManager.currentLevel.Size.Height - picture.Size.Height - 35 || picture.Left > LevelManager.currentLevel.Size.Width - picture.Size.Width - 15 || picture.Left < 0 || picture.Top < 0;; 
         }
 
         
@@ -35,15 +35,15 @@ namespace Plateformeur
         }
 
 
-        public static CollisionType MovePictureWithCollision(this PictureBox picture, int x, int y, bool collideWithBorders = true)
+        public static CollisionType MovePictureWithCollision(this PictureBox picture, Level level, int x, int y, bool collideWithBorders = true)
         {
             CollisionType collisionType = 0;
             Rectangle bounds = picture.Bounds;
 
             if ( collideWithBorders )
             {
-                bounds.X = Math.Min(Math.Max(picture.Left + x, 0), Form1.current.Size.Width - picture.Size.Width - 15);
-                bounds.Y = Math.Min(Math.Max(picture.Top + y, 0), Form1.current.Size.Height - picture.Size.Height - 35);
+                bounds.X = Math.Min(Math.Max(picture.Left + x, 0), level.form.Size.Width - picture.Size.Width - 15);
+                bounds.Y = Math.Min(Math.Max(picture.Top + y, 0), level.form.Size.Height - picture.Size.Height - 35);
 
                 // if (bounds.Y + y > Form1.current.Size.Height - picture.Size.Height - 35)
                 //     collisionType |= CollisionType.Bottom;
@@ -57,11 +57,11 @@ namespace Plateformeur
             if (collisionType == 0 && y > 0)
             {
                 // Collide with ground sprites
-                foreach (PictureBox ground in Form1.current.ground)
+                foreach (Platform platform in level.platforms)
                 {
-                    if ((picture.Bottom < ground.Bottom) && ground.Bounds.IntersectsWith(bounds))
+                    if ((picture.Bottom < platform.Bottom) && platform.Bounds.IntersectsWith(bounds))
                     {
-                        bounds.Y = ground.Top - picture.Size.Height;
+                        bounds.Y = platform.Top - picture.Size.Height;
                         collisionType |= CollisionType.Bottom;
                         break;
                     }
@@ -69,22 +69,22 @@ namespace Plateformeur
             }
 
             // Collide with wall sprites
-            foreach (PictureBox wall in Form1.current.walls)
+            foreach (Wall wall in level.walls)
             {
                 if (wall.Bounds.IntersectsWith(bounds))
                 {
-                    bounds.X = x > 0 ? wall.Left - picture.Size.Width : wall.Left + wall.Size.Width;
+                    bounds.X = x > 0 ? wall.Left - picture.Size.Width : wall.Left + wall.Width;
                     collisionType |= x > 0 ? CollisionType.Right : CollisionType.Left;
                     break;
                 }
             }
 
             // Collide with ceiling sprites
-            foreach (PictureBox ceiling in Form1.current.ceilings)
+            foreach (Ceiling ceiling in level.ceilings)
             {
                 if (ceiling.Bounds.IntersectsWith(bounds))
                 {
-                    bounds.Y = ceiling.Top + ceiling.Size.Height;
+                    bounds.Y = ceiling.Top + ceiling.Height;
                     collisionType |= CollisionType.Top;
                     break;
                 }
@@ -96,14 +96,14 @@ namespace Plateformeur
         }
 
 
-        public static void MovePicture(this PictureBox picture, int x, int y, bool collideWithBorders = true)
+        public static void MovePicture(this PictureBox picture, Level level, int x, int y, bool collideWithBorders = true)
         {
             Rectangle bounds = picture.Bounds;
 
             if ( collideWithBorders )
             {
-                bounds.X = Math.Min(Math.Max(picture.Left + x, 0), Form1.current.Size.Width - picture.Size.Width - 15);
-                bounds.Y = Math.Min(Math.Max(picture.Top + y, 0), Form1.current.Size.Height - picture.Size.Height - 35);
+                bounds.X = Math.Min(Math.Max(picture.Left + x, 0), level.form.Size.Width - picture.Size.Width - 15);
+                bounds.Y = Math.Min(Math.Max(picture.Top + y, 0), level.form.Size.Height - picture.Size.Height - 35);
             }
             else 
             {

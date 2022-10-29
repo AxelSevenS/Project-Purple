@@ -6,10 +6,8 @@ using System.Windows.Forms;
 
 namespace Plateformeur
 {
-    public class Coin : Sprite
+    public class Coin : GameObject
     {
-
-        public static List<Coin> coins = new List<Coin>();
 
         private bool _enabled = true;
 
@@ -23,12 +21,7 @@ namespace Plateformeur
             }
         }
 
-        public Coin(PictureBox picture) : base(picture) { }
-
-        public override void Update()
-        {
-
-        }
+        public Coin(PictureBox picture, Level level) : base(picture, level) { }
 
         public override void Interact(Player player)
         {

@@ -10,15 +10,15 @@ namespace Plateformeur
 {
     public class Goomba : Enemy
     {
-        public Goomba(PictureBox picture, int pointA, int pointB) : base(picture, pointA, pointB)
+        public Goomba(PictureBox picture, Level level, int pointA, int pointB) : base(picture, level, pointA, pointB)
         {
         }
 
-        public Goomba(PictureBox picture, int width) : base(picture, width)
+        public Goomba(PictureBox picture, Level level, int width) : base(picture, level, width)
         {
         }
 
-        public Goomba(PictureBox picture) : base(picture)
+        public Goomba(PictureBox picture, Level level) : base(picture, level)
         {
         }
 
@@ -57,7 +57,7 @@ namespace Plateformeur
 
         protected override void SideTouch(Player player)
         {
-            Form1.current.Reset();
+            player.Kill();
         }
     }
 }

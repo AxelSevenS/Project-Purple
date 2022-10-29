@@ -10,19 +10,17 @@ namespace Plateformeur
 {
     public abstract class Enemy : Sprite
     {
-
-        public static List<Enemy> enemies = new List<Enemy>();
-
+        
         protected bool toPointB = true;
-        private int pointA;
-        private int pointB;
+        public int pointA;
+        public int pointB;
 
         protected bool dead;
 
         protected virtual int speed => 2;
 
 
-        public Enemy(PictureBox picture, int pointA, int pointB) : base(picture) 
+        public Enemy(PictureBox picture, Level level, int pointA, int pointB) : base(picture, level) 
         {
             this.pointA = pointA;
             this.pointB = pointB;
@@ -32,11 +30,11 @@ namespace Plateformeur
             Animation();
         }
 
-        public Enemy(PictureBox picture, int width) : this(picture, picture.Left - width + picture.Width, picture.Left + width - picture.Width * 2)
+        public Enemy(PictureBox picture, Level level, int width) : this(picture, level, picture.Left - width + picture.Width, picture.Left + width - picture.Width * 2)
         {
         }
 
-        public Enemy(PictureBox picture) : this(picture, 100)
+        public Enemy(PictureBox picture, Level level) : this(picture, level, 100)
         {
         }
 
@@ -88,10 +86,6 @@ namespace Plateformeur
         {
             PositionCycle();
         }
-
-        public abstract void Kill();
-
-        protected abstract void Animation();
 
         protected abstract void Pound(Player player);
 

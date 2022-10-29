@@ -8,9 +8,7 @@ namespace Plateformeur
 {
     public class Player : Sprite
     {
-        public static Player current;
 
-        private Label scoreLabel;
         private int _score = 0;
 
         public int moveDirection = 0;
@@ -32,17 +30,17 @@ namespace Plateformeur
             set
             {
                 _score = Math.Min(Math.Max(value, 0), 999);
-                scoreLabel.Text = $"Score : {_score}";
+
+                if (level.scoreLabel != null)
+                    level.scoreLabel.Text = $"Score : {score}";
             }
         }
 
 
 
 
-        public Player(PictureBox picture, Label scoreLabel) : base(picture) 
+        public Player(PictureBox picture, Level level) : base(picture, level) 
         {
-            current = this;
-            this.scoreLabel = scoreLabel;
             score = 0;
         }
 
@@ -57,8 +55,8 @@ namespace Plateformeur
         {
             const int moveSpeed = 5;
 
-            if (picture.OutOfBounds())
-                Form1.current.Reset();
+            if (picture.Bounds.Bottom >= level.form.Height)
+                Kill();
 
             moveDirection = rightInput ? 1 : leftInput ? -1 : 0;
             if (moveDirection != 0)
@@ -67,7 +65,9 @@ namespace Plateformeur
             }
 
 
-            CollisionType collision = picture.MovePictureWithCollision(moveDirection * moveSpeed, gravity, false);
+            CollisionType collision = picture.MovePictureWithCollision(level, moveDirection * moveSpeed, gravity, false);
+
+            picture.Left = Math.Max(0, Math.Min(Left, LevelManager.currentLevel.Width - Width));
 
             canJump = false;
 
@@ -92,7 +92,12 @@ namespace Plateformeur
             Animation();
         }
 
-        private void Animation()
+        public override void Kill()
+        {
+            level.Reset();
+        }
+
+        protected override void Animation()
         {
             StringBuilder stateName = new StringBuilder("mario");
             stateName.Append(lastDirection == 1 ? "Right" : "Left");

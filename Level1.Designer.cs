@@ -1,7 +1,7 @@
 ﻿
 namespace Plateformeur
 {
-    partial class Form1
+    partial class Level1
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,47 @@ namespace Plateformeur
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox91 = new System.Windows.Forms.PictureBox();
+            this.pictureBox90 = new System.Windows.Forms.PictureBox();
+            this.pictureBox89 = new System.Windows.Forms.PictureBox();
+            this.pictureBox88 = new System.Windows.Forms.PictureBox();
+            this.pictureBox87 = new System.Windows.Forms.PictureBox();
+            this.pictureBox86 = new System.Windows.Forms.PictureBox();
+            this.pictureBox85 = new System.Windows.Forms.PictureBox();
+            this.pictureBox84 = new System.Windows.Forms.PictureBox();
+            this.pictureBox83 = new System.Windows.Forms.PictureBox();
+            this.pictureBox82 = new System.Windows.Forms.PictureBox();
+            this.pictureBox81 = new System.Windows.Forms.PictureBox();
+            this.pictureBox46 = new System.Windows.Forms.PictureBox();
+            this.pictureBox74 = new System.Windows.Forms.PictureBox();
+            this.pictureBox73 = new System.Windows.Forms.PictureBox();
+            this.pictureBox72 = new System.Windows.Forms.PictureBox();
+            this.pictureBox68 = new System.Windows.Forms.PictureBox();
+            this.pictureBox69 = new System.Windows.Forms.PictureBox();
+            this.pictureBox70 = new System.Windows.Forms.PictureBox();
+            this.pictureBox67 = new System.Windows.Forms.PictureBox();
+            this.pictureBox66 = new System.Windows.Forms.PictureBox();
+            this.pictureBox65 = new System.Windows.Forms.PictureBox();
+            this.pictureBox64 = new System.Windows.Forms.PictureBox();
+            this.pictureBox57 = new System.Windows.Forms.PictureBox();
+            this.pictureBox58 = new System.Windows.Forms.PictureBox();
+            this.pictureBox59 = new System.Windows.Forms.PictureBox();
+            this.pictureBox60 = new System.Windows.Forms.PictureBox();
+            this.pictureBox61 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.pictureBox53 = new System.Windows.Forms.PictureBox();
+            this.pictureBox54 = new System.Windows.Forms.PictureBox();
+            this.pictureBox55 = new System.Windows.Forms.PictureBox();
+            this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
             this.pictureBox51 = new System.Windows.Forms.PictureBox();
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
@@ -58,7 +89,6 @@ namespace Plateformeur
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.scoreLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -84,56 +114,57 @@ namespace Plateformeur
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.pictureBox55 = new System.Windows.Forms.PictureBox();
-            this.pictureBox56 = new System.Windows.Forms.PictureBox();
-            this.pictureBox57 = new System.Windows.Forms.PictureBox();
-            this.pictureBox58 = new System.Windows.Forms.PictureBox();
-            this.pictureBox59 = new System.Windows.Forms.PictureBox();
-            this.pictureBox60 = new System.Windows.Forms.PictureBox();
-            this.pictureBox61 = new System.Windows.Forms.PictureBox();
+            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox63 = new System.Windows.Forms.PictureBox();
+            this.pictureBox71 = new System.Windows.Forms.PictureBox();
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.pictureBox62 = new System.Windows.Forms.PictureBox();
-            this.pictureBox63 = new System.Windows.Forms.PictureBox();
-            this.pictureBox64 = new System.Windows.Forms.PictureBox();
-            this.pictureBox65 = new System.Windows.Forms.PictureBox();
-            this.pictureBox66 = new System.Windows.Forms.PictureBox();
-            this.pictureBox67 = new System.Windows.Forms.PictureBox();
-            this.pictureBox68 = new System.Windows.Forms.PictureBox();
-            this.pictureBox69 = new System.Windows.Forms.PictureBox();
-            this.pictureBox70 = new System.Windows.Forms.PictureBox();
-            this.pictureBox71 = new System.Windows.Forms.PictureBox();
-            this.pictureBox72 = new System.Windows.Forms.PictureBox();
-            this.pictureBox73 = new System.Windows.Forms.PictureBox();
-            this.pictureBox74 = new System.Windows.Forms.PictureBox();
             this.pictureBox75 = new System.Windows.Forms.PictureBox();
             this.pictureBox76 = new System.Windows.Forms.PictureBox();
             this.pictureBox77 = new System.Windows.Forms.PictureBox();
             this.pictureBox78 = new System.Windows.Forms.PictureBox();
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
-            this.pictureBox46 = new System.Windows.Forms.PictureBox();
-            this.pictureBox81 = new System.Windows.Forms.PictureBox();
-            this.pictureBox82 = new System.Windows.Forms.PictureBox();
-            this.pictureBox83 = new System.Windows.Forms.PictureBox();
-            this.pictureBox84 = new System.Windows.Forms.PictureBox();
-            this.pictureBox85 = new System.Windows.Forms.PictureBox();
-            this.pictureBox86 = new System.Windows.Forms.PictureBox();
-            this.pictureBox87 = new System.Windows.Forms.PictureBox();
-            this.pictureBox88 = new System.Windows.Forms.PictureBox();
-            this.pictureBox89 = new System.Windows.Forms.PictureBox();
-            this.pictureBox90 = new System.Windows.Forms.PictureBox();
-            this.pictureBox91 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
@@ -151,7 +182,6 @@ namespace Plateformeur
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -177,48 +207,18 @@ namespace Plateformeur
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -328,9 +328,479 @@ namespace Plateformeur
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(948, 553);
+            this.panel1.Size = new System.Drawing.Size(984, 561);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox91
+            // 
+            this.pictureBox91.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox91.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.BackgroundImage")));
+            this.pictureBox91.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.ErrorImage")));
+            this.pictureBox91.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox91.Image")));
+            this.pictureBox91.Location = new System.Drawing.Point(831, 511);
+            this.pictureBox91.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox91.Name = "pictureBox91";
+            this.pictureBox91.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox91.TabIndex = 131;
+            this.pictureBox91.TabStop = false;
+            this.pictureBox91.Tag = "Coin";
+            // 
+            // pictureBox90
+            // 
+            this.pictureBox90.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox90.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox90.BackgroundImage")));
+            this.pictureBox90.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox90.ErrorImage")));
+            this.pictureBox90.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox90.Image")));
+            this.pictureBox90.Location = new System.Drawing.Point(850, 511);
+            this.pictureBox90.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox90.Name = "pictureBox90";
+            this.pictureBox90.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox90.TabIndex = 130;
+            this.pictureBox90.TabStop = false;
+            this.pictureBox90.Tag = "Coin";
+            // 
+            // pictureBox89
+            // 
+            this.pictureBox89.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox89.ErrorImage = null;
+            this.pictureBox89.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox89.Image")));
+            this.pictureBox89.Location = new System.Drawing.Point(837, 140);
+            this.pictureBox89.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox89.Name = "pictureBox89";
+            this.pictureBox89.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox89.TabIndex = 129;
+            this.pictureBox89.TabStop = false;
+            this.pictureBox89.Tag = "Goomba_10";
+            // 
+            // pictureBox88
+            // 
+            this.pictureBox88.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox88.ErrorImage = null;
+            this.pictureBox88.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox88.Image")));
+            this.pictureBox88.Location = new System.Drawing.Point(234, 305);
+            this.pictureBox88.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox88.Name = "pictureBox88";
+            this.pictureBox88.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox88.TabIndex = 128;
+            this.pictureBox88.TabStop = false;
+            this.pictureBox88.Tag = "Goomba_10";
+            // 
+            // pictureBox87
+            // 
+            this.pictureBox87.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox87.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox87.Image")));
+            this.pictureBox87.Location = new System.Drawing.Point(895, 421);
+            this.pictureBox87.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox87.Name = "pictureBox87";
+            this.pictureBox87.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox87.TabIndex = 127;
+            this.pictureBox87.TabStop = false;
+            this.pictureBox87.Tag = "Goomba_5";
+            // 
+            // pictureBox86
+            // 
+            this.pictureBox86.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox86.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox86.BackgroundImage")));
+            this.pictureBox86.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox86.ErrorImage")));
+            this.pictureBox86.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox86.Image")));
+            this.pictureBox86.Location = new System.Drawing.Point(893, 95);
+            this.pictureBox86.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox86.Name = "pictureBox86";
+            this.pictureBox86.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox86.TabIndex = 126;
+            this.pictureBox86.TabStop = false;
+            this.pictureBox86.Tag = "Coin";
+            // 
+            // pictureBox85
+            // 
+            this.pictureBox85.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox85.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox85.BackgroundImage")));
+            this.pictureBox85.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox85.ErrorImage")));
+            this.pictureBox85.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox85.Image")));
+            this.pictureBox85.Location = new System.Drawing.Point(832, 148);
+            this.pictureBox85.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox85.Name = "pictureBox85";
+            this.pictureBox85.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox85.TabIndex = 125;
+            this.pictureBox85.TabStop = false;
+            this.pictureBox85.Tag = "Coin";
+            // 
+            // pictureBox84
+            // 
+            this.pictureBox84.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox84.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.BackgroundImage")));
+            this.pictureBox84.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.ErrorImage")));
+            this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
+            this.pictureBox84.Location = new System.Drawing.Point(891, 201);
+            this.pictureBox84.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox84.Name = "pictureBox84";
+            this.pictureBox84.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox84.TabIndex = 124;
+            this.pictureBox84.TabStop = false;
+            this.pictureBox84.Tag = "Coin";
+            // 
+            // pictureBox83
+            // 
+            this.pictureBox83.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox83.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox83.BackgroundImage")));
+            this.pictureBox83.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox83.ErrorImage")));
+            this.pictureBox83.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox83.Image")));
+            this.pictureBox83.Location = new System.Drawing.Point(835, 253);
+            this.pictureBox83.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox83.Name = "pictureBox83";
+            this.pictureBox83.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox83.TabIndex = 123;
+            this.pictureBox83.TabStop = false;
+            this.pictureBox83.Tag = "Coin";
+            // 
+            // pictureBox82
+            // 
+            this.pictureBox82.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox82.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox82.BackgroundImage")));
+            this.pictureBox82.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox82.ErrorImage")));
+            this.pictureBox82.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox82.Image")));
+            this.pictureBox82.Location = new System.Drawing.Point(890, 305);
+            this.pictureBox82.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox82.Name = "pictureBox82";
+            this.pictureBox82.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox82.TabIndex = 122;
+            this.pictureBox82.TabStop = false;
+            this.pictureBox82.Tag = "Coin";
+            // 
+            // pictureBox81
+            // 
+            this.pictureBox81.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox81.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.BackgroundImage")));
+            this.pictureBox81.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.ErrorImage")));
+            this.pictureBox81.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox81.Image")));
+            this.pictureBox81.Location = new System.Drawing.Point(834, 362);
+            this.pictureBox81.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox81.Name = "pictureBox81";
+            this.pictureBox81.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox81.TabIndex = 121;
+            this.pictureBox81.TabStop = false;
+            this.pictureBox81.Tag = "Coin";
+            this.pictureBox81.Click += new System.EventHandler(this.pictureBox81_Click);
+            // 
+            // pictureBox46
+            // 
+            this.pictureBox46.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.BackgroundImage")));
+            this.pictureBox46.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.ErrorImage")));
+            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
+            this.pictureBox46.Location = new System.Drawing.Point(888, 431);
+            this.pictureBox46.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox46.Name = "pictureBox46";
+            this.pictureBox46.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox46.TabIndex = 120;
+            this.pictureBox46.TabStop = false;
+            this.pictureBox46.Tag = "Coin";
+            // 
+            // pictureBox74
+            // 
+            this.pictureBox74.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox74.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.BackgroundImage")));
+            this.pictureBox74.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.ErrorImage")));
+            this.pictureBox74.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox74.Image")));
+            this.pictureBox74.Location = new System.Drawing.Point(907, 511);
+            this.pictureBox74.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox74.Name = "pictureBox74";
+            this.pictureBox74.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox74.TabIndex = 112;
+            this.pictureBox74.TabStop = false;
+            this.pictureBox74.Tag = "Coin";
+            // 
+            // pictureBox73
+            // 
+            this.pictureBox73.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox73.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.BackgroundImage")));
+            this.pictureBox73.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.ErrorImage")));
+            this.pictureBox73.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox73.Image")));
+            this.pictureBox73.Location = new System.Drawing.Point(888, 511);
+            this.pictureBox73.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox73.Name = "pictureBox73";
+            this.pictureBox73.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox73.TabIndex = 111;
+            this.pictureBox73.TabStop = false;
+            this.pictureBox73.Tag = "Coin";
+            // 
+            // pictureBox72
+            // 
+            this.pictureBox72.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox72.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.BackgroundImage")));
+            this.pictureBox72.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.ErrorImage")));
+            this.pictureBox72.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox72.Image")));
+            this.pictureBox72.Location = new System.Drawing.Point(869, 511);
+            this.pictureBox72.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox72.Name = "pictureBox72";
+            this.pictureBox72.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox72.TabIndex = 110;
+            this.pictureBox72.TabStop = false;
+            this.pictureBox72.Tag = "Coin";
+            // 
+            // pictureBox68
+            // 
+            this.pictureBox68.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox68.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox68.BackgroundImage")));
+            this.pictureBox68.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox68.ErrorImage")));
+            this.pictureBox68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox68.Image")));
+            this.pictureBox68.Location = new System.Drawing.Point(678, 376);
+            this.pictureBox68.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox68.Name = "pictureBox68";
+            this.pictureBox68.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox68.TabIndex = 108;
+            this.pictureBox68.TabStop = false;
+            this.pictureBox68.Tag = "Coin";
+            // 
+            // pictureBox69
+            // 
+            this.pictureBox69.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox69.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox69.BackgroundImage")));
+            this.pictureBox69.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox69.ErrorImage")));
+            this.pictureBox69.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox69.Image")));
+            this.pictureBox69.Location = new System.Drawing.Point(658, 376);
+            this.pictureBox69.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox69.Name = "pictureBox69";
+            this.pictureBox69.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox69.TabIndex = 107;
+            this.pictureBox69.TabStop = false;
+            this.pictureBox69.Tag = "Coin";
+            // 
+            // pictureBox70
+            // 
+            this.pictureBox70.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox70.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.BackgroundImage")));
+            this.pictureBox70.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.ErrorImage")));
+            this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
+            this.pictureBox70.Location = new System.Drawing.Point(639, 376);
+            this.pictureBox70.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox70.Name = "pictureBox70";
+            this.pictureBox70.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox70.TabIndex = 106;
+            this.pictureBox70.TabStop = false;
+            this.pictureBox70.Tag = "Coin";
+            // 
+            // pictureBox67
+            // 
+            this.pictureBox67.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox67.ErrorImage = null;
+            this.pictureBox67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox67.Image")));
+            this.pictureBox67.Location = new System.Drawing.Point(694, 447);
+            this.pictureBox67.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox67.Name = "pictureBox67";
+            this.pictureBox67.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox67.TabIndex = 105;
+            this.pictureBox67.TabStop = false;
+            this.pictureBox67.Tag = "Goomba";
+            // 
+            // pictureBox66
+            // 
+            this.pictureBox66.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox66.ErrorImage = null;
+            this.pictureBox66.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox66.Image")));
+            this.pictureBox66.Location = new System.Drawing.Point(644, 447);
+            this.pictureBox66.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox66.Name = "pictureBox66";
+            this.pictureBox66.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox66.TabIndex = 104;
+            this.pictureBox66.TabStop = false;
+            this.pictureBox66.Tag = "Goomba";
+            // 
+            // pictureBox65
+            // 
+            this.pictureBox65.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox65.ErrorImage = null;
+            this.pictureBox65.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox65.Image")));
+            this.pictureBox65.Location = new System.Drawing.Point(668, 447);
+            this.pictureBox65.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox65.Name = "pictureBox65";
+            this.pictureBox65.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox65.TabIndex = 103;
+            this.pictureBox65.TabStop = false;
+            this.pictureBox65.Tag = "Goomba";
+            // 
+            // pictureBox64
+            // 
+            this.pictureBox64.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox64.Location = new System.Drawing.Point(550, 470);
+            this.pictureBox64.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox64.Name = "pictureBox64";
+            this.pictureBox64.Size = new System.Drawing.Size(244, 16);
+            this.pictureBox64.TabIndex = 102;
+            this.pictureBox64.TabStop = false;
+            this.pictureBox64.Tag = "Ground";
+            // 
+            // pictureBox57
+            // 
+            this.pictureBox57.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox57.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.BackgroundImage")));
+            this.pictureBox57.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.ErrorImage")));
+            this.pictureBox57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox57.Image")));
+            this.pictureBox57.Location = new System.Drawing.Point(664, 328);
+            this.pictureBox57.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox57.Name = "pictureBox57";
+            this.pictureBox57.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox57.TabIndex = 97;
+            this.pictureBox57.TabStop = false;
+            this.pictureBox57.Tag = "Coin";
+            // 
+            // pictureBox58
+            // 
+            this.pictureBox58.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox58.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.BackgroundImage")));
+            this.pictureBox58.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.ErrorImage")));
+            this.pictureBox58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox58.Image")));
+            this.pictureBox58.Location = new System.Drawing.Point(645, 328);
+            this.pictureBox58.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox58.Name = "pictureBox58";
+            this.pictureBox58.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox58.TabIndex = 96;
+            this.pictureBox58.TabStop = false;
+            this.pictureBox58.Tag = "Coin";
+            // 
+            // pictureBox59
+            // 
+            this.pictureBox59.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox59.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.BackgroundImage")));
+            this.pictureBox59.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.ErrorImage")));
+            this.pictureBox59.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox59.Image")));
+            this.pictureBox59.Location = new System.Drawing.Point(627, 328);
+            this.pictureBox59.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox59.Name = "pictureBox59";
+            this.pictureBox59.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox59.TabIndex = 95;
+            this.pictureBox59.TabStop = false;
+            this.pictureBox59.Tag = "Coin";
+            // 
+            // pictureBox60
+            // 
+            this.pictureBox60.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox60.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.BackgroundImage")));
+            this.pictureBox60.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.ErrorImage")));
+            this.pictureBox60.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox60.Image")));
+            this.pictureBox60.Location = new System.Drawing.Point(607, 328);
+            this.pictureBox60.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox60.Name = "pictureBox60";
+            this.pictureBox60.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox60.TabIndex = 94;
+            this.pictureBox60.TabStop = false;
+            this.pictureBox60.Tag = "Coin";
+            // 
+            // pictureBox61
+            // 
+            this.pictureBox61.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox61.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox61.BackgroundImage")));
+            this.pictureBox61.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox61.ErrorImage")));
+            this.pictureBox61.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox61.Image")));
+            this.pictureBox61.Location = new System.Drawing.Point(588, 328);
+            this.pictureBox61.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox61.Name = "pictureBox61";
+            this.pictureBox61.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox61.TabIndex = 93;
+            this.pictureBox61.TabStop = false;
+            this.pictureBox61.Tag = "Coin";
+            // 
+            // pictureBox41
+            // 
+            this.pictureBox41.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.BackgroundImage")));
+            this.pictureBox41.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.ErrorImage")));
+            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
+            this.pictureBox41.Location = new System.Drawing.Point(120, 199);
+            this.pictureBox41.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox41.Name = "pictureBox41";
+            this.pictureBox41.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox41.TabIndex = 92;
+            this.pictureBox41.TabStop = false;
+            this.pictureBox41.Tag = "Coin";
+            // 
+            // pictureBox53
+            // 
+            this.pictureBox53.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.BackgroundImage")));
+            this.pictureBox53.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.ErrorImage")));
+            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
+            this.pictureBox53.Location = new System.Drawing.Point(101, 199);
+            this.pictureBox53.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox53.Name = "pictureBox53";
+            this.pictureBox53.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox53.TabIndex = 91;
+            this.pictureBox53.TabStop = false;
+            this.pictureBox53.Tag = "Coin";
+            // 
+            // pictureBox54
+            // 
+            this.pictureBox54.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox54.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.BackgroundImage")));
+            this.pictureBox54.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.ErrorImage")));
+            this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
+            this.pictureBox54.Location = new System.Drawing.Point(83, 199);
+            this.pictureBox54.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox54.Name = "pictureBox54";
+            this.pictureBox54.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox54.TabIndex = 90;
+            this.pictureBox54.TabStop = false;
+            this.pictureBox54.Tag = "Coin";
+            // 
+            // pictureBox55
+            // 
+            this.pictureBox55.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox55.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.BackgroundImage")));
+            this.pictureBox55.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.ErrorImage")));
+            this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
+            this.pictureBox55.Location = new System.Drawing.Point(63, 199);
+            this.pictureBox55.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox55.Name = "pictureBox55";
+            this.pictureBox55.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox55.TabIndex = 89;
+            this.pictureBox55.TabStop = false;
+            this.pictureBox55.Tag = "Coin";
+            // 
+            // pictureBox56
+            // 
+            this.pictureBox56.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox56.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.BackgroundImage")));
+            this.pictureBox56.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.ErrorImage")));
+            this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
+            this.pictureBox56.Location = new System.Drawing.Point(44, 199);
+            this.pictureBox56.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox56.Name = "pictureBox56";
+            this.pictureBox56.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox56.TabIndex = 88;
+            this.pictureBox56.TabStop = false;
+            this.pictureBox56.Tag = "Coin";
             // 
             // pictureBox49
             // 
@@ -415,17 +885,6 @@ namespace Plateformeur
             this.pictureBox45.TabIndex = 79;
             this.pictureBox45.TabStop = false;
             this.pictureBox45.Tag = "Koopa";
-            // 
-            // pictureBox44
-            // 
-            this.pictureBox44.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox44.Location = new System.Drawing.Point(453, 138);
-            this.pictureBox44.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(89, 16);
-            this.pictureBox44.TabIndex = 78;
-            this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "Ground";
             // 
             // pictureBox43
             // 
@@ -597,7 +1056,7 @@ namespace Plateformeur
             this.playerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.playerPicture.TabIndex = 64;
             this.playerPicture.TabStop = false;
-            this.playerPicture.Tag = "1";
+            this.playerPicture.Tag = "Player";
             // 
             // pictureBox27
             // 
@@ -664,23 +1123,13 @@ namespace Plateformeur
             // scoreLabel
             // 
             this.scoreLabel.AutoSize = true;
-            this.scoreLabel.Location = new System.Drawing.Point(20, 34);
+            this.scoreLabel.Location = new System.Drawing.Point(24, 27);
             this.scoreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scoreLabel.Name = "scoreLabel";
             this.scoreLabel.Size = new System.Drawing.Size(35, 13);
             this.scoreLabel.TabIndex = 33;
+            this.scoreLabel.Tag = "Score";
             this.scoreLabel.Text = "label1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 526);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(394, 16);
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "Ground";
             // 
             // pictureBox2
             // 
@@ -1020,155 +1469,49 @@ namespace Plateformeur
             this.pictureBox26.TabStop = false;
             this.pictureBox26.Tag = "Ground";
             // 
-            // pictureBox41
+            // pictureBox44
             // 
-            this.pictureBox41.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.BackgroundImage")));
-            this.pictureBox41.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.ErrorImage")));
-            this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
-            this.pictureBox41.Location = new System.Drawing.Point(120, 199);
-            this.pictureBox41.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox41.TabIndex = 92;
-            this.pictureBox41.TabStop = false;
-            this.pictureBox41.Tag = "Coin";
+            this.pictureBox44.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox44.Location = new System.Drawing.Point(453, 138);
+            this.pictureBox44.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox44.Name = "pictureBox44";
+            this.pictureBox44.Size = new System.Drawing.Size(89, 16);
+            this.pictureBox44.TabIndex = 78;
+            this.pictureBox44.TabStop = false;
+            this.pictureBox44.Tag = "Ground";
             // 
-            // pictureBox53
+            // pictureBox1
             // 
-            this.pictureBox53.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.BackgroundImage")));
-            this.pictureBox53.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.ErrorImage")));
-            this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
-            this.pictureBox53.Location = new System.Drawing.Point(101, 199);
-            this.pictureBox53.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox53.TabIndex = 91;
-            this.pictureBox53.TabStop = false;
-            this.pictureBox53.Tag = "Coin";
+            this.pictureBox1.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 526);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(394, 16);
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "Ground";
             // 
-            // pictureBox54
+            // pictureBox63
             // 
-            this.pictureBox54.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox54.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.BackgroundImage")));
-            this.pictureBox54.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.ErrorImage")));
-            this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
-            this.pictureBox54.Location = new System.Drawing.Point(83, 199);
-            this.pictureBox54.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox54.TabIndex = 90;
-            this.pictureBox54.TabStop = false;
-            this.pictureBox54.Tag = "Coin";
+            this.pictureBox63.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox63.Location = new System.Drawing.Point(933, 3);
+            this.pictureBox63.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox63.Name = "pictureBox63";
+            this.pictureBox63.Size = new System.Drawing.Size(15, 460);
+            this.pictureBox63.TabIndex = 101;
+            this.pictureBox63.TabStop = false;
+            this.pictureBox63.Tag = "Wall";
             // 
-            // pictureBox55
+            // pictureBox71
             // 
-            this.pictureBox55.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox55.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.BackgroundImage")));
-            this.pictureBox55.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.ErrorImage")));
-            this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
-            this.pictureBox55.Location = new System.Drawing.Point(63, 199);
-            this.pictureBox55.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox55.TabIndex = 89;
-            this.pictureBox55.TabStop = false;
-            this.pictureBox55.Tag = "Coin";
-            // 
-            // pictureBox56
-            // 
-            this.pictureBox56.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox56.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.BackgroundImage")));
-            this.pictureBox56.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.ErrorImage")));
-            this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
-            this.pictureBox56.Location = new System.Drawing.Point(44, 199);
-            this.pictureBox56.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox56.TabIndex = 88;
-            this.pictureBox56.TabStop = false;
-            this.pictureBox56.Tag = "Coin";
-            // 
-            // pictureBox57
-            // 
-            this.pictureBox57.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox57.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.BackgroundImage")));
-            this.pictureBox57.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.ErrorImage")));
-            this.pictureBox57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox57.Image")));
-            this.pictureBox57.Location = new System.Drawing.Point(664, 328);
-            this.pictureBox57.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox57.TabIndex = 97;
-            this.pictureBox57.TabStop = false;
-            this.pictureBox57.Tag = "Coin";
-            // 
-            // pictureBox58
-            // 
-            this.pictureBox58.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox58.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.BackgroundImage")));
-            this.pictureBox58.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.ErrorImage")));
-            this.pictureBox58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox58.Image")));
-            this.pictureBox58.Location = new System.Drawing.Point(645, 328);
-            this.pictureBox58.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox58.TabIndex = 96;
-            this.pictureBox58.TabStop = false;
-            this.pictureBox58.Tag = "Coin";
-            // 
-            // pictureBox59
-            // 
-            this.pictureBox59.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox59.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.BackgroundImage")));
-            this.pictureBox59.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.ErrorImage")));
-            this.pictureBox59.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox59.Image")));
-            this.pictureBox59.Location = new System.Drawing.Point(627, 328);
-            this.pictureBox59.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox59.Name = "pictureBox59";
-            this.pictureBox59.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox59.TabIndex = 95;
-            this.pictureBox59.TabStop = false;
-            this.pictureBox59.Tag = "Coin";
-            // 
-            // pictureBox60
-            // 
-            this.pictureBox60.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox60.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.BackgroundImage")));
-            this.pictureBox60.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox60.ErrorImage")));
-            this.pictureBox60.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox60.Image")));
-            this.pictureBox60.Location = new System.Drawing.Point(607, 328);
-            this.pictureBox60.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox60.Name = "pictureBox60";
-            this.pictureBox60.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox60.TabIndex = 94;
-            this.pictureBox60.TabStop = false;
-            this.pictureBox60.Tag = "Coin";
-            // 
-            // pictureBox61
-            // 
-            this.pictureBox61.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox61.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox61.BackgroundImage")));
-            this.pictureBox61.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox61.ErrorImage")));
-            this.pictureBox61.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox61.Image")));
-            this.pictureBox61.Location = new System.Drawing.Point(588, 328);
-            this.pictureBox61.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox61.Name = "pictureBox61";
-            this.pictureBox61.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox61.TabIndex = 93;
-            this.pictureBox61.TabStop = false;
-            this.pictureBox61.Tag = "Coin";
+            this.pictureBox71.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox71.Location = new System.Drawing.Point(862, 447);
+            this.pictureBox71.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox71.Name = "pictureBox71";
+            this.pictureBox71.Size = new System.Drawing.Size(86, 16);
+            this.pictureBox71.TabIndex = 109;
+            this.pictureBox71.TabStop = false;
+            this.pictureBox71.Tag = "Ground";
             // 
             // pictureBox48
             // 
@@ -1187,175 +1530,10 @@ namespace Plateformeur
             this.pictureBox62.Location = new System.Drawing.Point(783, 526);
             this.pictureBox62.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox62.Name = "pictureBox62";
-            this.pictureBox62.Size = new System.Drawing.Size(165, 16);
+            this.pictureBox62.Size = new System.Drawing.Size(798, 16);
             this.pictureBox62.TabIndex = 100;
             this.pictureBox62.TabStop = false;
             this.pictureBox62.Tag = "Ground";
-            // 
-            // pictureBox63
-            // 
-            this.pictureBox63.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox63.Location = new System.Drawing.Point(933, 3);
-            this.pictureBox63.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox63.Name = "pictureBox63";
-            this.pictureBox63.Size = new System.Drawing.Size(15, 539);
-            this.pictureBox63.TabIndex = 101;
-            this.pictureBox63.TabStop = false;
-            this.pictureBox63.Tag = "Wall";
-            // 
-            // pictureBox64
-            // 
-            this.pictureBox64.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox64.Location = new System.Drawing.Point(550, 470);
-            this.pictureBox64.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox64.Name = "pictureBox64";
-            this.pictureBox64.Size = new System.Drawing.Size(244, 16);
-            this.pictureBox64.TabIndex = 102;
-            this.pictureBox64.TabStop = false;
-            this.pictureBox64.Tag = "Ground";
-            // 
-            // pictureBox65
-            // 
-            this.pictureBox65.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox65.ErrorImage = null;
-            this.pictureBox65.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox65.Image")));
-            this.pictureBox65.Location = new System.Drawing.Point(668, 447);
-            this.pictureBox65.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox65.Name = "pictureBox65";
-            this.pictureBox65.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox65.TabIndex = 103;
-            this.pictureBox65.TabStop = false;
-            this.pictureBox65.Tag = "Goomba";
-            // 
-            // pictureBox66
-            // 
-            this.pictureBox66.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox66.ErrorImage = null;
-            this.pictureBox66.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox66.Image")));
-            this.pictureBox66.Location = new System.Drawing.Point(644, 447);
-            this.pictureBox66.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox66.Name = "pictureBox66";
-            this.pictureBox66.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox66.TabIndex = 104;
-            this.pictureBox66.TabStop = false;
-            this.pictureBox66.Tag = "Goomba";
-            // 
-            // pictureBox67
-            // 
-            this.pictureBox67.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox67.ErrorImage = null;
-            this.pictureBox67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox67.Image")));
-            this.pictureBox67.Location = new System.Drawing.Point(694, 447);
-            this.pictureBox67.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox67.Name = "pictureBox67";
-            this.pictureBox67.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox67.TabIndex = 105;
-            this.pictureBox67.TabStop = false;
-            this.pictureBox67.Tag = "Goomba";
-            // 
-            // pictureBox68
-            // 
-            this.pictureBox68.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox68.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox68.BackgroundImage")));
-            this.pictureBox68.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox68.ErrorImage")));
-            this.pictureBox68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox68.Image")));
-            this.pictureBox68.Location = new System.Drawing.Point(678, 376);
-            this.pictureBox68.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox68.Name = "pictureBox68";
-            this.pictureBox68.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox68.TabIndex = 108;
-            this.pictureBox68.TabStop = false;
-            this.pictureBox68.Tag = "Coin";
-            // 
-            // pictureBox69
-            // 
-            this.pictureBox69.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox69.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox69.BackgroundImage")));
-            this.pictureBox69.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox69.ErrorImage")));
-            this.pictureBox69.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox69.Image")));
-            this.pictureBox69.Location = new System.Drawing.Point(658, 376);
-            this.pictureBox69.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox69.Name = "pictureBox69";
-            this.pictureBox69.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox69.TabIndex = 107;
-            this.pictureBox69.TabStop = false;
-            this.pictureBox69.Tag = "Coin";
-            // 
-            // pictureBox70
-            // 
-            this.pictureBox70.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox70.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.BackgroundImage")));
-            this.pictureBox70.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox70.ErrorImage")));
-            this.pictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox70.Image")));
-            this.pictureBox70.Location = new System.Drawing.Point(639, 376);
-            this.pictureBox70.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox70.Name = "pictureBox70";
-            this.pictureBox70.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox70.TabIndex = 106;
-            this.pictureBox70.TabStop = false;
-            this.pictureBox70.Tag = "Coin";
-            // 
-            // pictureBox71
-            // 
-            this.pictureBox71.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox71.Location = new System.Drawing.Point(862, 447);
-            this.pictureBox71.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox71.Name = "pictureBox71";
-            this.pictureBox71.Size = new System.Drawing.Size(86, 16);
-            this.pictureBox71.TabIndex = 109;
-            this.pictureBox71.TabStop = false;
-            this.pictureBox71.Tag = "Ground";
-            // 
-            // pictureBox72
-            // 
-            this.pictureBox72.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox72.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.BackgroundImage")));
-            this.pictureBox72.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.ErrorImage")));
-            this.pictureBox72.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox72.Image")));
-            this.pictureBox72.Location = new System.Drawing.Point(869, 511);
-            this.pictureBox72.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox72.Name = "pictureBox72";
-            this.pictureBox72.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox72.TabIndex = 110;
-            this.pictureBox72.TabStop = false;
-            this.pictureBox72.Tag = "Coin";
-            // 
-            // pictureBox73
-            // 
-            this.pictureBox73.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox73.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.BackgroundImage")));
-            this.pictureBox73.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.ErrorImage")));
-            this.pictureBox73.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox73.Image")));
-            this.pictureBox73.Location = new System.Drawing.Point(888, 511);
-            this.pictureBox73.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox73.Name = "pictureBox73";
-            this.pictureBox73.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox73.TabIndex = 111;
-            this.pictureBox73.TabStop = false;
-            this.pictureBox73.Tag = "Coin";
-            // 
-            // pictureBox74
-            // 
-            this.pictureBox74.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox74.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.BackgroundImage")));
-            this.pictureBox74.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.ErrorImage")));
-            this.pictureBox74.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox74.Image")));
-            this.pictureBox74.Location = new System.Drawing.Point(907, 511);
-            this.pictureBox74.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox74.Name = "pictureBox74";
-            this.pictureBox74.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox74.TabIndex = 112;
-            this.pictureBox74.TabStop = false;
-            this.pictureBox74.Tag = "Coin";
             // 
             // pictureBox75
             // 
@@ -1423,206 +1601,59 @@ namespace Plateformeur
             this.pictureBox80.TabStop = false;
             this.pictureBox80.Tag = "Ground";
             // 
-            // pictureBox46
-            // 
-            this.pictureBox46.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.BackgroundImage")));
-            this.pictureBox46.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.ErrorImage")));
-            this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
-            this.pictureBox46.Location = new System.Drawing.Point(888, 431);
-            this.pictureBox46.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox46.Name = "pictureBox46";
-            this.pictureBox46.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox46.TabIndex = 120;
-            this.pictureBox46.TabStop = false;
-            this.pictureBox46.Tag = "Coin";
-            // 
-            // pictureBox81
-            // 
-            this.pictureBox81.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox81.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.BackgroundImage")));
-            this.pictureBox81.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.ErrorImage")));
-            this.pictureBox81.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox81.Image")));
-            this.pictureBox81.Location = new System.Drawing.Point(834, 362);
-            this.pictureBox81.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox81.Name = "pictureBox81";
-            this.pictureBox81.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox81.TabIndex = 121;
-            this.pictureBox81.TabStop = false;
-            this.pictureBox81.Tag = "Coin";
-            this.pictureBox81.Click += new System.EventHandler(this.pictureBox81_Click);
-            // 
-            // pictureBox82
-            // 
-            this.pictureBox82.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox82.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox82.BackgroundImage")));
-            this.pictureBox82.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox82.ErrorImage")));
-            this.pictureBox82.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox82.Image")));
-            this.pictureBox82.Location = new System.Drawing.Point(890, 305);
-            this.pictureBox82.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox82.Name = "pictureBox82";
-            this.pictureBox82.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox82.TabIndex = 122;
-            this.pictureBox82.TabStop = false;
-            this.pictureBox82.Tag = "Coin";
-            // 
-            // pictureBox83
-            // 
-            this.pictureBox83.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox83.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox83.BackgroundImage")));
-            this.pictureBox83.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox83.ErrorImage")));
-            this.pictureBox83.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox83.Image")));
-            this.pictureBox83.Location = new System.Drawing.Point(835, 253);
-            this.pictureBox83.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox83.Name = "pictureBox83";
-            this.pictureBox83.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox83.TabIndex = 123;
-            this.pictureBox83.TabStop = false;
-            this.pictureBox83.Tag = "Coin";
-            // 
-            // pictureBox84
-            // 
-            this.pictureBox84.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox84.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.BackgroundImage")));
-            this.pictureBox84.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.ErrorImage")));
-            this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
-            this.pictureBox84.Location = new System.Drawing.Point(891, 201);
-            this.pictureBox84.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox84.Name = "pictureBox84";
-            this.pictureBox84.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox84.TabIndex = 124;
-            this.pictureBox84.TabStop = false;
-            this.pictureBox84.Tag = "Coin";
-            // 
-            // pictureBox85
-            // 
-            this.pictureBox85.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox85.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox85.BackgroundImage")));
-            this.pictureBox85.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox85.ErrorImage")));
-            this.pictureBox85.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox85.Image")));
-            this.pictureBox85.Location = new System.Drawing.Point(832, 148);
-            this.pictureBox85.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox85.Name = "pictureBox85";
-            this.pictureBox85.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox85.TabIndex = 125;
-            this.pictureBox85.TabStop = false;
-            this.pictureBox85.Tag = "Coin";
-            // 
-            // pictureBox86
-            // 
-            this.pictureBox86.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox86.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox86.BackgroundImage")));
-            this.pictureBox86.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox86.ErrorImage")));
-            this.pictureBox86.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox86.Image")));
-            this.pictureBox86.Location = new System.Drawing.Point(893, 95);
-            this.pictureBox86.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox86.Name = "pictureBox86";
-            this.pictureBox86.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox86.TabIndex = 126;
-            this.pictureBox86.TabStop = false;
-            this.pictureBox86.Tag = "Coin";
-            // 
-            // pictureBox87
-            // 
-            this.pictureBox87.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox87.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox87.Image")));
-            this.pictureBox87.Location = new System.Drawing.Point(895, 421);
-            this.pictureBox87.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox87.Name = "pictureBox87";
-            this.pictureBox87.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox87.TabIndex = 127;
-            this.pictureBox87.TabStop = false;
-            this.pictureBox87.Tag = "Goomba_5";
-            // 
-            // pictureBox88
-            // 
-            this.pictureBox88.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox88.ErrorImage = null;
-            this.pictureBox88.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox88.Image")));
-            this.pictureBox88.Location = new System.Drawing.Point(234, 305);
-            this.pictureBox88.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox88.Name = "pictureBox88";
-            this.pictureBox88.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox88.TabIndex = 128;
-            this.pictureBox88.TabStop = false;
-            this.pictureBox88.Tag = "Goomba_10";
-            // 
-            // pictureBox89
-            // 
-            this.pictureBox89.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox89.ErrorImage = null;
-            this.pictureBox89.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox89.Image")));
-            this.pictureBox89.Location = new System.Drawing.Point(837, 140);
-            this.pictureBox89.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox89.Name = "pictureBox89";
-            this.pictureBox89.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox89.TabIndex = 129;
-            this.pictureBox89.TabStop = false;
-            this.pictureBox89.Tag = "Goomba_10";
-            // 
-            // pictureBox90
-            // 
-            this.pictureBox90.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox90.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox90.BackgroundImage")));
-            this.pictureBox90.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox90.ErrorImage")));
-            this.pictureBox90.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox90.Image")));
-            this.pictureBox90.Location = new System.Drawing.Point(850, 511);
-            this.pictureBox90.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox90.Name = "pictureBox90";
-            this.pictureBox90.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox90.TabIndex = 130;
-            this.pictureBox90.TabStop = false;
-            this.pictureBox90.Tag = "Coin";
-            // 
-            // pictureBox91
-            // 
-            this.pictureBox91.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox91.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.BackgroundImage")));
-            this.pictureBox91.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.ErrorImage")));
-            this.pictureBox91.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox91.Image")));
-            this.pictureBox91.Location = new System.Drawing.Point(831, 511);
-            this.pictureBox91.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox91.Name = "pictureBox91";
-            this.pictureBox91.Size = new System.Drawing.Size(15, 16);
-            this.pictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox91.TabIndex = 131;
-            this.pictureBox91.TabStop = false;
-            this.pictureBox91.Tag = "Coin";
-            // 
-            // Form1
+            // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 553);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(964, 592);
-            this.MinimumSize = new System.Drawing.Size(964, 592);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(1000, 600);
+            this.Name = "Level1";
+            this.Text = "Super Mario Copyright Infringement";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnKeyUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
@@ -1640,7 +1671,6 @@ namespace Plateformeur
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1666,48 +1696,18 @@ namespace Plateformeur
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox61)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox64)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox65)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox66)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox67)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox68)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox69)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -14,9 +14,10 @@ D:\Platformer\bin\Debug\Plateformeur.exe
 D:\Platformer\bin\Debug\Plateformeur.pdb
 D:\Platformer\obj\Debug\Plateformeur.csproj.AssemblyReference.cache
 D:\Platformer\obj\Debug\Plateformeur.csproj.SuggestedBindingRedirects.cache
-D:\Platformer\obj\Debug\Plateformeur.Form1.resources
 D:\Platformer\obj\Debug\Plateformeur.Properties.Resources.resources
 D:\Platformer\obj\Debug\Plateformeur.csproj.GenerateResource.cache
 D:\Platformer\obj\Debug\Plateformeur.csproj.CoreCompileInputs.cache
 D:\Platformer\obj\Debug\Plateformeur.exe
 D:\Platformer\obj\Debug\Plateformeur.pdb
+D:\Platformer\obj\Debug\Plateformeur.Level1.resources
+D:\Platformer\obj\Debug\Plateformeur.Menu.resources

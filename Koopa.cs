@@ -17,15 +17,15 @@ namespace Plateformeur
 
         protected override int speed => 1;
 
-        public Koopa(PictureBox picture, int pointA, int pointB) : base(picture, pointA, pointB)
+        public Koopa(PictureBox picture, Level level, int pointA, int pointB) : base(picture, level, pointA, pointB)
         {
         }
 
-        public Koopa(PictureBox picture, int width) : base(picture, width)
+        public Koopa(PictureBox picture, Level level, int width) : base(picture, level, width)
         {
         }
 
-        public Koopa(PictureBox picture) : base(picture)
+        public Koopa(PictureBox picture, Level level) : base(picture, level)
         {
         }
 
@@ -49,7 +49,7 @@ namespace Plateformeur
                     return;
 
 
-                CollisionType collision = picture.MovePictureWithCollision(direction * 7, gravity, false);
+                CollisionType collision = picture.MovePictureWithCollision(level, direction * 7, gravity, false);
 
                 bool hitRight = direction == 1 && collision.HasFlag(CollisionType.Right);
                 bool hitLeft = direction == -1 && collision.HasFlag(CollisionType.Left);
@@ -69,7 +69,7 @@ namespace Plateformeur
                     gravity = Utility.MoveTowards(gravity, fallSpeed, 1);
                 }
 
-                foreach(Enemy enemy in enemies)
+                foreach(Enemy enemy in level.enemies)
                 {
                     if (enemy == this)
                         continue;
@@ -142,7 +142,7 @@ namespace Plateformeur
             }
             else
             {
-                Form1.current.Reset();
+                player.Kill();
             }
         }
     }
