@@ -21,3 +21,5 @@ D:\Platformer\obj\Debug\Plateformeur.exe
 D:\Platformer\obj\Debug\Plateformeur.pdb
 D:\Platformer\obj\Debug\Plateformeur.Level1.resources
 D:\Platformer\obj\Debug\Plateformeur.Menu.resources
+D:\Platformer\obj\Debug\Plateformeur.Level2.resources
+D:\Platformer\obj\Debug\Plateformeur.Level3.resources

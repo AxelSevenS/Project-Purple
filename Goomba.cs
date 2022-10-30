@@ -10,6 +10,9 @@ namespace Plateformeur
 {
     public class Goomba : Enemy
     {
+
+        private int animState = 1;
+
         public Goomba(PictureBox picture, Level level, int pointA, int pointB) : base(picture, level, pointA, pointB)
         {
         }
@@ -28,20 +31,28 @@ namespace Plateformeur
             picture.Image = Resources.goomba1;
         }
 
-        protected override async void Animation()
+        protected override void Animation()
         {
-            bool animState = false;
-            while (!dead)
-            {
-                picture.Image = animState ? Resources.goomba1 : Resources.goomba2;
-                animState = !animState;
-                await Task.Delay(200);
-            }
+            if (dead)
+                return;
+                
+            const int animLength = 20;
+            picture.Image = animState < animLength ? Resources.goomba1 : Resources.goomba2;
+            
+            if (animState >= animLength*2)
+                animState = 1;
+            else
+                animState++;
+            
         }
 
         public override async void Kill()
         {
+            if (dead)
+                return;
+            
             dead = true;
+            level.player.score += 5;
             picture.Image = Resources.goombaDead;
             await Task.Delay(400);
             picture.Visible = false;
@@ -49,7 +60,6 @@ namespace Plateformeur
 
         protected override void Pound(Player player)
         {
-            player.score += 5;
             Kill();
             picture.Image = Resources.goombaDead;
             player.Jump();

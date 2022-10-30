@@ -12,13 +12,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Plateformeur
 {
-    public partial class Level1 : Form
+    public partial class Level2 : Form
     {
 
         public Level level;
 
 
-        public Level1()
+        public Level2()
         {
 
             InitializeComponent();
@@ -42,5 +42,6 @@ namespace Plateformeur
         {
             level.Tick();
         }
+
     }
 }

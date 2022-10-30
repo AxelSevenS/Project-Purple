@@ -46,10 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Block.cs" />
     <Compile Include="Ceiling.cs" />
     <Compile Include="Coin.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="Goal.cs" />
     <Compile Include="Level.cs" />
+    <Compile Include="Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Level1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +92,12 @@
     <Compile Include="Sprite.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Wall.cs" />
+    <EmbeddedResource Include="Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Level1.resx">
       <DependentUpon>Level1.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +178,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\koopaShell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_pole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marioWin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

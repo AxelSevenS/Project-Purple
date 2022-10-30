@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Plateformeur
@@ -14,6 +15,8 @@ namespace Plateformeur
         public int moveDirection = 0;
         public int lastDirection = 1;
         private int animState = 1;
+
+        private bool win = false;
 
 
 
@@ -53,10 +56,54 @@ namespace Plateformeur
 
         public override void Update()
         {
-            const int moveSpeed = 5;
+            if (win)
+                return;
 
             if (picture.Bounds.Bottom >= level.form.Height)
                 Kill();
+
+            Movement();
+
+            Interaction();
+
+            Animation();
+        }
+
+        private void Interaction()
+        {
+            if (Utility.SqrDistance(level.goal.picture.Location, picture.Location) > 1000)
+            {
+                level.goal.Interact(this);
+            }
+
+            // try
+            // {
+            foreach (Coin coin in level.coins)
+            {
+                if (Utility.SqrDistance(coin.picture.Location, picture.Location) > 1000)
+                    continue;
+
+                coin.Interact(this);
+            }
+            // }
+            // catch (Exception) { }
+
+            // try
+            // {
+            foreach (Enemy enemy in level.enemies)
+            {
+                if (Utility.SqrDistance(enemy.picture.Location, picture.Location) > 1000)
+                    continue;
+
+                enemy.Interact(this);
+            }
+            // }
+            // catch (Exception) { }
+        }
+
+        private void Movement()
+        {
+            const int moveSpeed = 5;
 
             moveDirection = rightInput ? 1 : leftInput ? -1 : 0;
             if (moveDirection != 0)
@@ -88,8 +135,6 @@ namespace Plateformeur
 
             if (jumpInput && canJump)
                 Jump();
-
-            Animation();
         }
 
         public override void Kill()
@@ -97,8 +142,24 @@ namespace Plateformeur
             level.Reset();
         }
 
+        public async void Win() {
+            win = true;
+            picture.Image = Resources.marioWin;
+
+            await Task.Delay(2000);
+
+            LevelManager.NextLevel();
+        }
+
         protected override void Animation()
         {
+            
+            if (win)
+            {
+                picture.Image = Resources.marioWin;
+                return;
+            }
+
             StringBuilder stateName = new StringBuilder("mario");
             stateName.Append(lastDirection == 1 ? "Right" : "Left");
             stateName.Append(canJump ? (moveDirection == 0 ? "0" : animState.ToString()) : "Jump");

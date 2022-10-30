@@ -44,52 +44,49 @@ namespace Plateformeur
             {
                 bounds.X = Math.Min(Math.Max(picture.Left + x, 0), level.form.Size.Width - picture.Size.Width - 15);
                 bounds.Y = Math.Min(Math.Max(picture.Top + y, 0), level.form.Size.Height - picture.Size.Height - 35);
-
-                // if (bounds.Y + y > Form1.current.Size.Height - picture.Size.Height - 35)
-                //     collisionType |= CollisionType.Bottom;
             }
             else 
             {
                 bounds.X += x;
                 bounds.Y += y;
             }
-            
-            if (collisionType == 0 && y > 0)
+
+            Point center = new Point(bounds.X + bounds.Width / 2, bounds.Y + bounds.Height / 2);
+
+            // Collide with block sprites
+            foreach (Block block in level.blocks)
             {
-                // Collide with ground sprites
-                foreach (Platform platform in level.platforms)
+                if (block.Bounds.IntersectsWith(bounds))
                 {
-                    if ((picture.Bottom < platform.Bottom) && platform.Bounds.IntersectsWith(bounds))
+
+                    CollisionType blockCollision = 
+                        center.X < block.Left ? CollisionType.Right :
+                        center.X > block.Right ? CollisionType.Left :
+                        center.Y < block.Bottom ? CollisionType.Bottom : 
+                        center.Y > block.Top ? CollisionType.Top :
+                        0;
+
+                    switch (blockCollision)
                     {
-                        bounds.Y = platform.Top - picture.Size.Height;
-                        collisionType |= CollisionType.Bottom;
-                        break;
+                        case CollisionType.Top:
+                            bounds.Y = block.Bottom;
+                            break;
+                        case CollisionType.Bottom:
+                            bounds.Y = block.Top - picture.Size.Height;
+                            break;
+                        case CollisionType.Left:
+                            bounds.X = block.Right;
+                            break;
+                        case CollisionType.Right:
+                            bounds.X = block.Left - picture.Size.Width;
+                            break;
                     }
+
+                    collisionType |= blockCollision;
                 }
+
             }
 
-            // Collide with wall sprites
-            foreach (Wall wall in level.walls)
-            {
-                if (wall.Bounds.IntersectsWith(bounds))
-                {
-                    bounds.X = x > 0 ? wall.Left - picture.Size.Width : wall.Left + wall.Width;
-                    collisionType |= x > 0 ? CollisionType.Right : CollisionType.Left;
-                    break;
-                }
-            }
-
-            // Collide with ceiling sprites
-            foreach (Ceiling ceiling in level.ceilings)
-            {
-                if (ceiling.Bounds.IntersectsWith(bounds))
-                {
-                    bounds.Y = ceiling.Top + ceiling.Height;
-                    collisionType |= CollisionType.Top;
-                    break;
-                }
-            }
-            
 
             picture.Bounds = bounds;
             return collisionType;

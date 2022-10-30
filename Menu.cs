@@ -20,7 +20,16 @@ namespace Plateformeur
         private void button1_Click(object sender, EventArgs e)
         {
             LevelManager.SetLevel(1);
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LevelManager.SetLevel(2);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LevelManager.SetLevel(3);
         }
     }
 }

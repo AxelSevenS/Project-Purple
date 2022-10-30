@@ -33,10 +33,22 @@ namespace Plateformeur
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox104 = new System.Windows.Forms.PictureBox();
+            this.pictureBox98 = new System.Windows.Forms.PictureBox();
+            this.pictureBox99 = new System.Windows.Forms.PictureBox();
+            this.pictureBox100 = new System.Windows.Forms.PictureBox();
+            this.pictureBox101 = new System.Windows.Forms.PictureBox();
+            this.pictureBox102 = new System.Windows.Forms.PictureBox();
+            this.pictureBox103 = new System.Windows.Forms.PictureBox();
+            this.pictureBox97 = new System.Windows.Forms.PictureBox();
+            this.pictureBox96 = new System.Windows.Forms.PictureBox();
+            this.pictureBox95 = new System.Windows.Forms.PictureBox();
+            this.pictureBox94 = new System.Windows.Forms.PictureBox();
+            this.pictureBox93 = new System.Windows.Forms.PictureBox();
+            this.pictureBox92 = new System.Windows.Forms.PictureBox();
             this.pictureBox91 = new System.Windows.Forms.PictureBox();
             this.pictureBox90 = new System.Windows.Forms.PictureBox();
             this.pictureBox89 = new System.Windows.Forms.PictureBox();
-            this.pictureBox88 = new System.Windows.Forms.PictureBox();
             this.pictureBox87 = new System.Windows.Forms.PictureBox();
             this.pictureBox86 = new System.Windows.Forms.PictureBox();
             this.pictureBox85 = new System.Windows.Forms.PictureBox();
@@ -118,19 +130,31 @@ namespace Plateformeur
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox63 = new System.Windows.Forms.PictureBox();
             this.pictureBox71 = new System.Windows.Forms.PictureBox();
-            this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.pictureBox62 = new System.Windows.Forms.PictureBox();
-            this.pictureBox75 = new System.Windows.Forms.PictureBox();
             this.pictureBox76 = new System.Windows.Forms.PictureBox();
             this.pictureBox77 = new System.Windows.Forms.PictureBox();
             this.pictureBox78 = new System.Windows.Forms.PictureBox();
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
+            this.pictureBox88 = new System.Windows.Forms.PictureBox();
+            this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox104)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox100)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox101)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox102)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox103)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
@@ -211,14 +235,14 @@ namespace Plateformeur
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -231,10 +255,22 @@ namespace Plateformeur
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.pictureBox104);
+            this.panel1.Controls.Add(this.pictureBox98);
+            this.panel1.Controls.Add(this.pictureBox99);
+            this.panel1.Controls.Add(this.pictureBox100);
+            this.panel1.Controls.Add(this.pictureBox101);
+            this.panel1.Controls.Add(this.pictureBox102);
+            this.panel1.Controls.Add(this.pictureBox103);
+            this.panel1.Controls.Add(this.pictureBox97);
+            this.panel1.Controls.Add(this.pictureBox96);
+            this.panel1.Controls.Add(this.pictureBox95);
+            this.panel1.Controls.Add(this.pictureBox94);
+            this.panel1.Controls.Add(this.pictureBox93);
+            this.panel1.Controls.Add(this.pictureBox92);
             this.panel1.Controls.Add(this.pictureBox91);
             this.panel1.Controls.Add(this.pictureBox90);
             this.panel1.Controls.Add(this.pictureBox89);
-            this.panel1.Controls.Add(this.pictureBox88);
             this.panel1.Controls.Add(this.pictureBox87);
             this.panel1.Controls.Add(this.pictureBox86);
             this.panel1.Controls.Add(this.pictureBox85);
@@ -316,21 +352,183 @@ namespace Plateformeur
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox63);
             this.panel1.Controls.Add(this.pictureBox71);
-            this.panel1.Controls.Add(this.pictureBox48);
             this.panel1.Controls.Add(this.pictureBox62);
-            this.panel1.Controls.Add(this.pictureBox75);
             this.panel1.Controls.Add(this.pictureBox76);
             this.panel1.Controls.Add(this.pictureBox77);
             this.panel1.Controls.Add(this.pictureBox78);
             this.panel1.Controls.Add(this.pictureBox79);
             this.panel1.Controls.Add(this.pictureBox80);
+            this.panel1.Controls.Add(this.pictureBox88);
+            this.panel1.Controls.Add(this.pictureBox48);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 561);
+            this.panel1.Size = new System.Drawing.Size(1830, 561);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox104
+            // 
+            this.pictureBox104.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox104.Location = new System.Drawing.Point(11, 163);
+            this.pictureBox104.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox104.Name = "pictureBox104";
+            this.pictureBox104.Size = new System.Drawing.Size(107, 16);
+            this.pictureBox104.TabIndex = 144;
+            this.pictureBox104.TabStop = false;
+            this.pictureBox104.Tag = "Block";
+            // 
+            // pictureBox98
+            // 
+            this.pictureBox98.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox98.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox98.BackgroundImage")));
+            this.pictureBox98.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox98.ErrorImage")));
+            this.pictureBox98.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox98.Image")));
+            this.pictureBox98.Location = new System.Drawing.Point(225, 311);
+            this.pictureBox98.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox98.Name = "pictureBox98";
+            this.pictureBox98.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox98.TabIndex = 143;
+            this.pictureBox98.TabStop = false;
+            this.pictureBox98.Tag = "Coin";
+            // 
+            // pictureBox99
+            // 
+            this.pictureBox99.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox99.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox99.BackgroundImage")));
+            this.pictureBox99.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox99.ErrorImage")));
+            this.pictureBox99.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox99.Image")));
+            this.pictureBox99.Location = new System.Drawing.Point(206, 311);
+            this.pictureBox99.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox99.Name = "pictureBox99";
+            this.pictureBox99.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox99.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox99.TabIndex = 142;
+            this.pictureBox99.TabStop = false;
+            this.pictureBox99.Tag = "Coin";
+            // 
+            // pictureBox100
+            // 
+            this.pictureBox100.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox100.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox100.BackgroundImage")));
+            this.pictureBox100.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox100.ErrorImage")));
+            this.pictureBox100.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox100.Image")));
+            this.pictureBox100.Location = new System.Drawing.Point(188, 311);
+            this.pictureBox100.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox100.Name = "pictureBox100";
+            this.pictureBox100.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox100.TabIndex = 141;
+            this.pictureBox100.TabStop = false;
+            this.pictureBox100.Tag = "Coin";
+            // 
+            // pictureBox101
+            // 
+            this.pictureBox101.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox101.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox101.BackgroundImage")));
+            this.pictureBox101.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox101.ErrorImage")));
+            this.pictureBox101.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox101.Image")));
+            this.pictureBox101.Location = new System.Drawing.Point(168, 311);
+            this.pictureBox101.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox101.Name = "pictureBox101";
+            this.pictureBox101.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox101.TabIndex = 140;
+            this.pictureBox101.TabStop = false;
+            this.pictureBox101.Tag = "Coin";
+            // 
+            // pictureBox102
+            // 
+            this.pictureBox102.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox102.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox102.BackgroundImage")));
+            this.pictureBox102.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox102.ErrorImage")));
+            this.pictureBox102.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox102.Image")));
+            this.pictureBox102.Location = new System.Drawing.Point(149, 311);
+            this.pictureBox102.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox102.Name = "pictureBox102";
+            this.pictureBox102.Size = new System.Drawing.Size(15, 16);
+            this.pictureBox102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox102.TabIndex = 139;
+            this.pictureBox102.TabStop = false;
+            this.pictureBox102.Tag = "Coin";
+            // 
+            // pictureBox103
+            // 
+            this.pictureBox103.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox103.Location = new System.Drawing.Point(120, 328);
+            this.pictureBox103.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox103.Name = "pictureBox103";
+            this.pictureBox103.Size = new System.Drawing.Size(148, 16);
+            this.pictureBox103.TabIndex = 138;
+            this.pictureBox103.TabStop = false;
+            this.pictureBox103.Tag = "Block";
+            // 
+            // pictureBox97
+            // 
+            this.pictureBox97.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox97.Location = new System.Drawing.Point(1360, 379);
+            this.pictureBox97.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox97.Name = "pictureBox97";
+            this.pictureBox97.Size = new System.Drawing.Size(24, 148);
+            this.pictureBox97.TabIndex = 137;
+            this.pictureBox97.TabStop = false;
+            this.pictureBox97.Tag = "Block";
+            // 
+            // pictureBox96
+            // 
+            this.pictureBox96.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox96.Location = new System.Drawing.Point(1336, 407);
+            this.pictureBox96.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox96.Name = "pictureBox96";
+            this.pictureBox96.Size = new System.Drawing.Size(24, 120);
+            this.pictureBox96.TabIndex = 136;
+            this.pictureBox96.TabStop = false;
+            this.pictureBox96.Tag = "Block";
+            // 
+            // pictureBox95
+            // 
+            this.pictureBox95.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox95.Location = new System.Drawing.Point(1312, 431);
+            this.pictureBox95.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox95.Name = "pictureBox95";
+            this.pictureBox95.Size = new System.Drawing.Size(24, 96);
+            this.pictureBox95.TabIndex = 135;
+            this.pictureBox95.TabStop = false;
+            this.pictureBox95.Tag = "Block";
+            // 
+            // pictureBox94
+            // 
+            this.pictureBox94.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox94.Location = new System.Drawing.Point(1288, 455);
+            this.pictureBox94.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox94.Name = "pictureBox94";
+            this.pictureBox94.Size = new System.Drawing.Size(24, 72);
+            this.pictureBox94.TabIndex = 134;
+            this.pictureBox94.TabStop = false;
+            this.pictureBox94.Tag = "Block";
+            // 
+            // pictureBox93
+            // 
+            this.pictureBox93.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox93.Location = new System.Drawing.Point(1264, 479);
+            this.pictureBox93.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox93.Name = "pictureBox93";
+            this.pictureBox93.Size = new System.Drawing.Size(24, 48);
+            this.pictureBox93.TabIndex = 133;
+            this.pictureBox93.TabStop = false;
+            this.pictureBox93.Tag = "Block";
+            // 
+            // pictureBox92
+            // 
+            this.pictureBox92.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox92.Location = new System.Drawing.Point(1240, 503);
+            this.pictureBox92.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox92.Name = "pictureBox92";
+            this.pictureBox92.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox92.TabIndex = 132;
+            this.pictureBox92.TabStop = false;
+            this.pictureBox92.Tag = "Block";
             // 
             // pictureBox91
             // 
@@ -338,7 +536,7 @@ namespace Plateformeur
             this.pictureBox91.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.BackgroundImage")));
             this.pictureBox91.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox91.ErrorImage")));
             this.pictureBox91.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox91.Image")));
-            this.pictureBox91.Location = new System.Drawing.Point(831, 511);
+            this.pictureBox91.Location = new System.Drawing.Point(786, 455);
             this.pictureBox91.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox91.Name = "pictureBox91";
             this.pictureBox91.Size = new System.Drawing.Size(15, 16);
@@ -353,7 +551,7 @@ namespace Plateformeur
             this.pictureBox90.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox90.BackgroundImage")));
             this.pictureBox90.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox90.ErrorImage")));
             this.pictureBox90.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox90.Image")));
-            this.pictureBox90.Location = new System.Drawing.Point(850, 511);
+            this.pictureBox90.Location = new System.Drawing.Point(805, 455);
             this.pictureBox90.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox90.Name = "pictureBox90";
             this.pictureBox90.Size = new System.Drawing.Size(15, 16);
@@ -367,7 +565,7 @@ namespace Plateformeur
             this.pictureBox89.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox89.ErrorImage = null;
             this.pictureBox89.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox89.Image")));
-            this.pictureBox89.Location = new System.Drawing.Point(837, 140);
+            this.pictureBox89.Location = new System.Drawing.Point(837, 98);
             this.pictureBox89.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox89.Name = "pictureBox89";
             this.pictureBox89.Size = new System.Drawing.Size(22, 24);
@@ -376,25 +574,11 @@ namespace Plateformeur
             this.pictureBox89.TabStop = false;
             this.pictureBox89.Tag = "Goomba_10";
             // 
-            // pictureBox88
-            // 
-            this.pictureBox88.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox88.ErrorImage = null;
-            this.pictureBox88.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox88.Image")));
-            this.pictureBox88.Location = new System.Drawing.Point(234, 305);
-            this.pictureBox88.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox88.Name = "pictureBox88";
-            this.pictureBox88.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox88.TabIndex = 128;
-            this.pictureBox88.TabStop = false;
-            this.pictureBox88.Tag = "Goomba_10";
-            // 
             // pictureBox87
             // 
             this.pictureBox87.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox87.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox87.Image")));
-            this.pictureBox87.Location = new System.Drawing.Point(895, 421);
+            this.pictureBox87.Location = new System.Drawing.Point(895, 379);
             this.pictureBox87.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox87.Name = "pictureBox87";
             this.pictureBox87.Size = new System.Drawing.Size(22, 24);
@@ -409,7 +593,7 @@ namespace Plateformeur
             this.pictureBox86.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox86.BackgroundImage")));
             this.pictureBox86.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox86.ErrorImage")));
             this.pictureBox86.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox86.Image")));
-            this.pictureBox86.Location = new System.Drawing.Point(893, 95);
+            this.pictureBox86.Location = new System.Drawing.Point(893, 53);
             this.pictureBox86.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox86.Name = "pictureBox86";
             this.pictureBox86.Size = new System.Drawing.Size(15, 16);
@@ -424,7 +608,7 @@ namespace Plateformeur
             this.pictureBox85.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox85.BackgroundImage")));
             this.pictureBox85.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox85.ErrorImage")));
             this.pictureBox85.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox85.Image")));
-            this.pictureBox85.Location = new System.Drawing.Point(832, 148);
+            this.pictureBox85.Location = new System.Drawing.Point(832, 106);
             this.pictureBox85.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox85.Name = "pictureBox85";
             this.pictureBox85.Size = new System.Drawing.Size(15, 16);
@@ -439,7 +623,7 @@ namespace Plateformeur
             this.pictureBox84.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.BackgroundImage")));
             this.pictureBox84.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox84.ErrorImage")));
             this.pictureBox84.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox84.Image")));
-            this.pictureBox84.Location = new System.Drawing.Point(891, 201);
+            this.pictureBox84.Location = new System.Drawing.Point(891, 159);
             this.pictureBox84.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox84.Name = "pictureBox84";
             this.pictureBox84.Size = new System.Drawing.Size(15, 16);
@@ -454,7 +638,7 @@ namespace Plateformeur
             this.pictureBox83.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox83.BackgroundImage")));
             this.pictureBox83.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox83.ErrorImage")));
             this.pictureBox83.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox83.Image")));
-            this.pictureBox83.Location = new System.Drawing.Point(835, 253);
+            this.pictureBox83.Location = new System.Drawing.Point(835, 211);
             this.pictureBox83.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox83.Name = "pictureBox83";
             this.pictureBox83.Size = new System.Drawing.Size(15, 16);
@@ -469,7 +653,7 @@ namespace Plateformeur
             this.pictureBox82.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox82.BackgroundImage")));
             this.pictureBox82.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox82.ErrorImage")));
             this.pictureBox82.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox82.Image")));
-            this.pictureBox82.Location = new System.Drawing.Point(890, 305);
+            this.pictureBox82.Location = new System.Drawing.Point(890, 263);
             this.pictureBox82.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox82.Name = "pictureBox82";
             this.pictureBox82.Size = new System.Drawing.Size(15, 16);
@@ -484,7 +668,7 @@ namespace Plateformeur
             this.pictureBox81.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.BackgroundImage")));
             this.pictureBox81.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.ErrorImage")));
             this.pictureBox81.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox81.Image")));
-            this.pictureBox81.Location = new System.Drawing.Point(834, 362);
+            this.pictureBox81.Location = new System.Drawing.Point(834, 320);
             this.pictureBox81.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox81.Name = "pictureBox81";
             this.pictureBox81.Size = new System.Drawing.Size(15, 16);
@@ -492,7 +676,6 @@ namespace Plateformeur
             this.pictureBox81.TabIndex = 121;
             this.pictureBox81.TabStop = false;
             this.pictureBox81.Tag = "Coin";
-            this.pictureBox81.Click += new System.EventHandler(this.pictureBox81_Click);
             // 
             // pictureBox46
             // 
@@ -500,7 +683,7 @@ namespace Plateformeur
             this.pictureBox46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.BackgroundImage")));
             this.pictureBox46.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox46.ErrorImage")));
             this.pictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox46.Image")));
-            this.pictureBox46.Location = new System.Drawing.Point(888, 431);
+            this.pictureBox46.Location = new System.Drawing.Point(888, 389);
             this.pictureBox46.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(15, 16);
@@ -515,7 +698,7 @@ namespace Plateformeur
             this.pictureBox74.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.BackgroundImage")));
             this.pictureBox74.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox74.ErrorImage")));
             this.pictureBox74.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox74.Image")));
-            this.pictureBox74.Location = new System.Drawing.Point(907, 511);
+            this.pictureBox74.Location = new System.Drawing.Point(862, 455);
             this.pictureBox74.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox74.Name = "pictureBox74";
             this.pictureBox74.Size = new System.Drawing.Size(15, 16);
@@ -530,7 +713,7 @@ namespace Plateformeur
             this.pictureBox73.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.BackgroundImage")));
             this.pictureBox73.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox73.ErrorImage")));
             this.pictureBox73.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox73.Image")));
-            this.pictureBox73.Location = new System.Drawing.Point(888, 511);
+            this.pictureBox73.Location = new System.Drawing.Point(843, 455);
             this.pictureBox73.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox73.Name = "pictureBox73";
             this.pictureBox73.Size = new System.Drawing.Size(15, 16);
@@ -545,7 +728,7 @@ namespace Plateformeur
             this.pictureBox72.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.BackgroundImage")));
             this.pictureBox72.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox72.ErrorImage")));
             this.pictureBox72.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox72.Image")));
-            this.pictureBox72.Location = new System.Drawing.Point(869, 511);
+            this.pictureBox72.Location = new System.Drawing.Point(824, 455);
             this.pictureBox72.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox72.Name = "pictureBox72";
             this.pictureBox72.Size = new System.Drawing.Size(15, 16);
@@ -644,13 +827,13 @@ namespace Plateformeur
             // pictureBox64
             // 
             this.pictureBox64.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox64.Location = new System.Drawing.Point(550, 470);
+            this.pictureBox64.Location = new System.Drawing.Point(521, 470);
             this.pictureBox64.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox64.Name = "pictureBox64";
-            this.pictureBox64.Size = new System.Drawing.Size(244, 16);
+            this.pictureBox64.Size = new System.Drawing.Size(359, 16);
             this.pictureBox64.TabIndex = 102;
             this.pictureBox64.TabStop = false;
-            this.pictureBox64.Tag = "Ground";
+            this.pictureBox64.Tag = "Block";
             // 
             // pictureBox57
             // 
@@ -733,7 +916,7 @@ namespace Plateformeur
             this.pictureBox41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.BackgroundImage")));
             this.pictureBox41.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox41.ErrorImage")));
             this.pictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox41.Image")));
-            this.pictureBox41.Location = new System.Drawing.Point(120, 199);
+            this.pictureBox41.Location = new System.Drawing.Point(122, 199);
             this.pictureBox41.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(15, 16);
@@ -748,7 +931,7 @@ namespace Plateformeur
             this.pictureBox53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.BackgroundImage")));
             this.pictureBox53.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.ErrorImage")));
             this.pictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox53.Image")));
-            this.pictureBox53.Location = new System.Drawing.Point(101, 199);
+            this.pictureBox53.Location = new System.Drawing.Point(103, 199);
             this.pictureBox53.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(15, 16);
@@ -763,7 +946,7 @@ namespace Plateformeur
             this.pictureBox54.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.BackgroundImage")));
             this.pictureBox54.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.ErrorImage")));
             this.pictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox54.Image")));
-            this.pictureBox54.Location = new System.Drawing.Point(83, 199);
+            this.pictureBox54.Location = new System.Drawing.Point(85, 199);
             this.pictureBox54.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(15, 16);
@@ -778,7 +961,7 @@ namespace Plateformeur
             this.pictureBox55.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.BackgroundImage")));
             this.pictureBox55.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.ErrorImage")));
             this.pictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox55.Image")));
-            this.pictureBox55.Location = new System.Drawing.Point(63, 199);
+            this.pictureBox55.Location = new System.Drawing.Point(65, 199);
             this.pictureBox55.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.Size = new System.Drawing.Size(15, 16);
@@ -793,7 +976,7 @@ namespace Plateformeur
             this.pictureBox56.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.BackgroundImage")));
             this.pictureBox56.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.ErrorImage")));
             this.pictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox56.Image")));
-            this.pictureBox56.Location = new System.Drawing.Point(44, 199);
+            this.pictureBox56.Location = new System.Drawing.Point(46, 199);
             this.pictureBox56.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox56.Name = "pictureBox56";
             this.pictureBox56.Size = new System.Drawing.Size(15, 16);
@@ -889,13 +1072,13 @@ namespace Plateformeur
             // pictureBox43
             // 
             this.pictureBox43.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox43.Location = new System.Drawing.Point(794, 163);
+            this.pictureBox43.Location = new System.Drawing.Point(794, 121);
             this.pictureBox43.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(15, 259);
             this.pictureBox43.TabIndex = 77;
             this.pictureBox43.TabStop = false;
-            this.pictureBox43.Tag = "Wall";
+            this.pictureBox43.Tag = "Block";
             // 
             // pictureBox40
             // 
@@ -906,7 +1089,7 @@ namespace Plateformeur
             this.pictureBox40.Size = new System.Drawing.Size(148, 16);
             this.pictureBox40.TabIndex = 74;
             this.pictureBox40.TabStop = false;
-            this.pictureBox40.Tag = "Ground";
+            this.pictureBox40.Tag = "Block";
             // 
             // pictureBox37
             // 
@@ -914,7 +1097,7 @@ namespace Plateformeur
             this.pictureBox37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox37.BackgroundImage")));
             this.pictureBox37.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox37.ErrorImage")));
             this.pictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox37.Image")));
-            this.pictureBox37.Location = new System.Drawing.Point(128, 24);
+            this.pictureBox37.Location = new System.Drawing.Point(225, 24);
             this.pictureBox37.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(15, 16);
@@ -929,7 +1112,7 @@ namespace Plateformeur
             this.pictureBox38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.BackgroundImage")));
             this.pictureBox38.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox38.ErrorImage")));
             this.pictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox38.Image")));
-            this.pictureBox38.Location = new System.Drawing.Point(109, 24);
+            this.pictureBox38.Location = new System.Drawing.Point(206, 24);
             this.pictureBox38.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(15, 16);
@@ -944,7 +1127,7 @@ namespace Plateformeur
             this.pictureBox39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox39.BackgroundImage")));
             this.pictureBox39.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox39.ErrorImage")));
             this.pictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox39.Image")));
-            this.pictureBox39.Location = new System.Drawing.Point(89, 24);
+            this.pictureBox39.Location = new System.Drawing.Point(186, 24);
             this.pictureBox39.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(15, 16);
@@ -1049,10 +1232,10 @@ namespace Plateformeur
             this.playerPicture.ErrorImage = null;
             this.playerPicture.Image = global::Plateformeur.Properties.Resources.marioRight0;
             this.playerPicture.InitialImage = null;
-            this.playerPicture.Location = new System.Drawing.Point(35, 489);
+            this.playerPicture.Location = new System.Drawing.Point(27, 495);
             this.playerPicture.Margin = new System.Windows.Forms.Padding(2);
             this.playerPicture.Name = "playerPicture";
-            this.playerPicture.Size = new System.Drawing.Size(30, 32);
+            this.playerPicture.Size = new System.Drawing.Size(32, 32);
             this.playerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.playerPicture.TabIndex = 64;
             this.playerPicture.TabStop = false;
@@ -1062,7 +1245,7 @@ namespace Plateformeur
             // 
             this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
-            this.pictureBox27.Location = new System.Drawing.Point(140, 191);
+            this.pictureBox27.Location = new System.Drawing.Point(142, 191);
             this.pictureBox27.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(22, 24);
@@ -1075,7 +1258,7 @@ namespace Plateformeur
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
-            this.pictureBox28.Location = new System.Drawing.Point(233, 130);
+            this.pictureBox28.Location = new System.Drawing.Point(249, 103);
             this.pictureBox28.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(22, 24);
@@ -1089,7 +1272,7 @@ namespace Plateformeur
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.ErrorImage = null;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(300, 422);
+            this.pictureBox11.Location = new System.Drawing.Point(298, 445);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(22, 24);
@@ -1107,7 +1290,7 @@ namespace Plateformeur
             this.pictureBox30.Size = new System.Drawing.Size(950, 16);
             this.pictureBox30.TabIndex = 63;
             this.pictureBox30.TabStop = false;
-            this.pictureBox30.Tag = "Ceiling";
+            this.pictureBox30.Tag = "Block";
             // 
             // pictureBox29
             // 
@@ -1118,7 +1301,7 @@ namespace Plateformeur
             this.pictureBox29.Size = new System.Drawing.Size(15, 527);
             this.pictureBox29.TabIndex = 62;
             this.pictureBox29.TabStop = false;
-            this.pictureBox29.Tag = "Wall";
+            this.pictureBox29.Tag = "Block";
             // 
             // scoreLabel
             // 
@@ -1134,46 +1317,46 @@ namespace Plateformeur
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox2.Location = new System.Drawing.Point(225, 447);
+            this.pictureBox2.Location = new System.Drawing.Point(223, 470);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(150, 16);
             this.pictureBox2.TabIndex = 35;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "Ground";
+            this.pictureBox2.Tag = "Block";
             // 
             // pictureBox25
             // 
             this.pictureBox25.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox25.Location = new System.Drawing.Point(88, 155);
+            this.pictureBox25.Location = new System.Drawing.Point(175, 126);
             this.pictureBox25.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(237, 16);
+            this.pictureBox25.Size = new System.Drawing.Size(149, 16);
             this.pictureBox25.TabIndex = 58;
             this.pictureBox25.TabStop = false;
-            this.pictureBox25.Tag = "Ground";
+            this.pictureBox25.Tag = "Block";
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox3.Location = new System.Drawing.Point(453, 83);
+            this.pictureBox3.Location = new System.Drawing.Point(453, 98);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(15, 459);
+            this.pictureBox3.Size = new System.Drawing.Size(15, 444);
             this.pictureBox3.TabIndex = 36;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "Wall";
+            this.pictureBox3.Tag = "Block";
             // 
             // pictureBox24
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox24.Location = new System.Drawing.Point(8, 216);
+            this.pictureBox24.Location = new System.Drawing.Point(10, 216);
             this.pictureBox24.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(237, 16);
             this.pictureBox24.TabIndex = 57;
             this.pictureBox24.TabStop = false;
-            this.pictureBox24.Tag = "Ground";
+            this.pictureBox24.Tag = "Block";
             // 
             // pictureBox4
             // 
@@ -1181,7 +1364,7 @@ namespace Plateformeur
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.ErrorImage")));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(234, 431);
+            this.pictureBox4.Location = new System.Drawing.Point(232, 454);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(15, 16);
@@ -1196,7 +1379,7 @@ namespace Plateformeur
             this.pictureBox22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox22.BackgroundImage")));
             this.pictureBox22.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox22.ErrorImage")));
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(176, 377);
+            this.pictureBox22.Location = new System.Drawing.Point(158, 415);
             this.pictureBox22.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(15, 16);
@@ -1211,7 +1394,7 @@ namespace Plateformeur
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(253, 431);
+            this.pictureBox5.Location = new System.Drawing.Point(251, 454);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(15, 16);
@@ -1226,7 +1409,7 @@ namespace Plateformeur
             this.pictureBox23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox23.BackgroundImage")));
             this.pictureBox23.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox23.ErrorImage")));
             this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(159, 377);
+            this.pictureBox23.Location = new System.Drawing.Point(141, 415);
             this.pictureBox23.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(15, 16);
@@ -1241,7 +1424,7 @@ namespace Plateformeur
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.ErrorImage")));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(272, 431);
+            this.pictureBox6.Location = new System.Drawing.Point(270, 454);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(15, 16);
@@ -1256,7 +1439,7 @@ namespace Plateformeur
             this.pictureBox21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.BackgroundImage")));
             this.pictureBox21.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.ErrorImage")));
             this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(232, 312);
+            this.pictureBox21.Location = new System.Drawing.Point(54, 363);
             this.pictureBox21.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(15, 16);
@@ -1271,7 +1454,7 @@ namespace Plateformeur
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.ErrorImage")));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(292, 431);
+            this.pictureBox7.Location = new System.Drawing.Point(290, 454);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(15, 16);
@@ -1286,7 +1469,7 @@ namespace Plateformeur
             this.pictureBox20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.BackgroundImage")));
             this.pictureBox20.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.ErrorImage")));
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(214, 312);
+            this.pictureBox20.Location = new System.Drawing.Point(36, 363);
             this.pictureBox20.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(15, 16);
@@ -1301,7 +1484,7 @@ namespace Plateformeur
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.ErrorImage")));
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(311, 431);
+            this.pictureBox8.Location = new System.Drawing.Point(309, 454);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(15, 16);
@@ -1330,7 +1513,7 @@ namespace Plateformeur
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(331, 431);
+            this.pictureBox9.Location = new System.Drawing.Point(329, 454);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(15, 16);
@@ -1360,7 +1543,7 @@ namespace Plateformeur
             this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.ErrorImage")));
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(350, 431);
+            this.pictureBox10.Location = new System.Drawing.Point(348, 454);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(15, 16);
@@ -1402,13 +1585,13 @@ namespace Plateformeur
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox12.Location = new System.Drawing.Point(138, 393);
+            this.pictureBox12.Location = new System.Drawing.Point(120, 431);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(74, 16);
             this.pictureBox12.TabIndex = 45;
             this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "Ground";
+            this.pictureBox12.Tag = "Block";
             // 
             // pictureBox15
             // 
@@ -1428,13 +1611,13 @@ namespace Plateformeur
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox13.Location = new System.Drawing.Point(195, 328);
+            this.pictureBox13.Location = new System.Drawing.Point(17, 379);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(75, 16);
             this.pictureBox13.TabIndex = 46;
             this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "Ground";
+            this.pictureBox13.Tag = "Block";
             // 
             // pictureBox14
             // 
@@ -1445,18 +1628,18 @@ namespace Plateformeur
             this.pictureBox14.Size = new System.Drawing.Size(148, 16);
             this.pictureBox14.TabIndex = 47;
             this.pictureBox14.TabStop = false;
-            this.pictureBox14.Tag = "Ground";
+            this.pictureBox14.Tag = "Block";
             // 
             // pictureBox42
             // 
             this.pictureBox42.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox42.Location = new System.Drawing.Point(514, 345);
+            this.pictureBox42.Location = new System.Drawing.Point(521, 345);
             this.pictureBox42.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(295, 16);
+            this.pictureBox42.Size = new System.Drawing.Size(359, 16);
             this.pictureBox42.TabIndex = 76;
             this.pictureBox42.TabStop = false;
-            this.pictureBox42.Tag = "Ground";
+            this.pictureBox42.Tag = "Block";
             // 
             // pictureBox26
             // 
@@ -1467,7 +1650,7 @@ namespace Plateformeur
             this.pictureBox26.Size = new System.Drawing.Size(137, 16);
             this.pictureBox26.TabIndex = 59;
             this.pictureBox26.TabStop = false;
-            this.pictureBox26.Tag = "Ground";
+            this.pictureBox26.Tag = "Block";
             // 
             // pictureBox44
             // 
@@ -1478,7 +1661,7 @@ namespace Plateformeur
             this.pictureBox44.Size = new System.Drawing.Size(89, 16);
             this.pictureBox44.TabIndex = 78;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "Ground";
+            this.pictureBox44.Tag = "Block";
             // 
             // pictureBox1
             // 
@@ -1489,7 +1672,7 @@ namespace Plateformeur
             this.pictureBox1.Size = new System.Drawing.Size(394, 16);
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "Ground";
+            this.pictureBox1.Tag = "Block";
             // 
             // pictureBox63
             // 
@@ -1497,32 +1680,21 @@ namespace Plateformeur
             this.pictureBox63.Location = new System.Drawing.Point(933, 3);
             this.pictureBox63.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox63.Name = "pictureBox63";
-            this.pictureBox63.Size = new System.Drawing.Size(15, 460);
+            this.pictureBox63.Size = new System.Drawing.Size(15, 418);
             this.pictureBox63.TabIndex = 101;
             this.pictureBox63.TabStop = false;
-            this.pictureBox63.Tag = "Wall";
+            this.pictureBox63.Tag = "Block";
             // 
             // pictureBox71
             // 
             this.pictureBox71.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox71.Location = new System.Drawing.Point(862, 447);
+            this.pictureBox71.Location = new System.Drawing.Point(862, 405);
             this.pictureBox71.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox71.Name = "pictureBox71";
             this.pictureBox71.Size = new System.Drawing.Size(86, 16);
             this.pictureBox71.TabIndex = 109;
             this.pictureBox71.TabStop = false;
-            this.pictureBox71.Tag = "Ground";
-            // 
-            // pictureBox48
-            // 
-            this.pictureBox48.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox48.Location = new System.Drawing.Point(453, 526);
-            this.pictureBox48.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox48.Name = "pictureBox48";
-            this.pictureBox48.Size = new System.Drawing.Size(108, 16);
-            this.pictureBox48.TabIndex = 99;
-            this.pictureBox48.TabStop = false;
-            this.pictureBox48.Tag = "Ground";
+            this.pictureBox71.Tag = "Block";
             // 
             // pictureBox62
             // 
@@ -1533,93 +1705,119 @@ namespace Plateformeur
             this.pictureBox62.Size = new System.Drawing.Size(798, 16);
             this.pictureBox62.TabIndex = 100;
             this.pictureBox62.TabStop = false;
-            this.pictureBox62.Tag = "Ground";
-            // 
-            // pictureBox75
-            // 
-            this.pictureBox75.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox75.Location = new System.Drawing.Point(794, 377);
-            this.pictureBox75.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox75.Name = "pictureBox75";
-            this.pictureBox75.Size = new System.Drawing.Size(86, 16);
-            this.pictureBox75.TabIndex = 113;
-            this.pictureBox75.TabStop = false;
-            this.pictureBox75.Tag = "Ground";
+            this.pictureBox62.Tag = "Block";
             // 
             // pictureBox76
             // 
             this.pictureBox76.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox76.Location = new System.Drawing.Point(862, 320);
+            this.pictureBox76.Location = new System.Drawing.Point(862, 278);
             this.pictureBox76.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox76.Name = "pictureBox76";
             this.pictureBox76.Size = new System.Drawing.Size(86, 16);
             this.pictureBox76.TabIndex = 114;
             this.pictureBox76.TabStop = false;
-            this.pictureBox76.Tag = "Ground";
+            this.pictureBox76.Tag = "Block";
             // 
             // pictureBox77
             // 
             this.pictureBox77.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox77.Location = new System.Drawing.Point(794, 268);
+            this.pictureBox77.Location = new System.Drawing.Point(794, 226);
             this.pictureBox77.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox77.Name = "pictureBox77";
             this.pictureBox77.Size = new System.Drawing.Size(86, 16);
             this.pictureBox77.TabIndex = 115;
             this.pictureBox77.TabStop = false;
-            this.pictureBox77.Tag = "Ground";
+            this.pictureBox77.Tag = "Block";
             // 
             // pictureBox78
             // 
             this.pictureBox78.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox78.Location = new System.Drawing.Point(862, 216);
+            this.pictureBox78.Location = new System.Drawing.Point(862, 174);
             this.pictureBox78.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox78.Name = "pictureBox78";
             this.pictureBox78.Size = new System.Drawing.Size(86, 16);
             this.pictureBox78.TabIndex = 116;
             this.pictureBox78.TabStop = false;
-            this.pictureBox78.Tag = "Ground";
+            this.pictureBox78.Tag = "Block";
             // 
             // pictureBox79
             // 
             this.pictureBox79.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox79.Location = new System.Drawing.Point(794, 163);
+            this.pictureBox79.Location = new System.Drawing.Point(794, 121);
             this.pictureBox79.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox79.Name = "pictureBox79";
             this.pictureBox79.Size = new System.Drawing.Size(86, 16);
             this.pictureBox79.TabIndex = 117;
             this.pictureBox79.TabStop = false;
-            this.pictureBox79.Tag = "Ground";
+            this.pictureBox79.Tag = "Block";
             // 
             // pictureBox80
             // 
             this.pictureBox80.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox80.Location = new System.Drawing.Point(862, 111);
+            this.pictureBox80.Location = new System.Drawing.Point(862, 69);
             this.pictureBox80.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox80.Name = "pictureBox80";
             this.pictureBox80.Size = new System.Drawing.Size(86, 16);
             this.pictureBox80.TabIndex = 119;
             this.pictureBox80.TabStop = false;
-            this.pictureBox80.Tag = "Ground";
+            this.pictureBox80.Tag = "Block";
+            // 
+            // pictureBox88
+            // 
+            this.pictureBox88.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox88.ErrorImage = null;
+            this.pictureBox88.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox88.Image")));
+            this.pictureBox88.Location = new System.Drawing.Point(56, 356);
+            this.pictureBox88.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox88.Name = "pictureBox88";
+            this.pictureBox88.Size = new System.Drawing.Size(22, 24);
+            this.pictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox88.TabIndex = 128;
+            this.pictureBox88.TabStop = false;
+            this.pictureBox88.Tag = "Goomba_10";
+            // 
+            // pictureBox48
+            // 
+            this.pictureBox48.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox48.Image = global::Plateformeur.Properties.Resources.flag_pole;
+            this.pictureBox48.Location = new System.Drawing.Point(1488, 275);
+            this.pictureBox48.Name = "pictureBox48";
+            this.pictureBox48.Size = new System.Drawing.Size(36, 252);
+            this.pictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox48.TabIndex = 146;
+            this.pictureBox48.TabStop = false;
+            this.pictureBox48.Tag = "Goal";
             // 
             // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(1830, 561);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "Level1";
             this.Text = "Super Mario Copyright Infringement";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.OnKeyUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox104)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox98)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox99)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox100)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox101)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox102)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox103)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox97)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox96)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox95)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox94)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox87)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox86)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
@@ -1700,14 +1898,14 @@ namespace Plateformeur
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox77)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox78)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1777,7 +1975,6 @@ namespace Plateformeur
         private System.Windows.Forms.PictureBox pictureBox60;
         private System.Windows.Forms.PictureBox pictureBox61;
         private System.Windows.Forms.PictureBox pictureBox62;
-        private System.Windows.Forms.PictureBox pictureBox48;
         private System.Windows.Forms.PictureBox pictureBox63;
         private System.Windows.Forms.PictureBox pictureBox68;
         private System.Windows.Forms.PictureBox pictureBox69;
@@ -1790,7 +1987,6 @@ namespace Plateformeur
         private System.Windows.Forms.PictureBox pictureBox74;
         private System.Windows.Forms.PictureBox pictureBox73;
         private System.Windows.Forms.PictureBox pictureBox72;
-        private System.Windows.Forms.PictureBox pictureBox75;
         private System.Windows.Forms.PictureBox pictureBox76;
         private System.Windows.Forms.PictureBox pictureBox77;
         private System.Windows.Forms.PictureBox pictureBox78;
@@ -1808,5 +2004,19 @@ namespace Plateformeur
         private System.Windows.Forms.PictureBox pictureBox89;
         private System.Windows.Forms.PictureBox pictureBox91;
         private System.Windows.Forms.PictureBox pictureBox90;
+        private System.Windows.Forms.PictureBox pictureBox92;
+        private System.Windows.Forms.PictureBox pictureBox93;
+        private System.Windows.Forms.PictureBox pictureBox97;
+        private System.Windows.Forms.PictureBox pictureBox96;
+        private System.Windows.Forms.PictureBox pictureBox95;
+        private System.Windows.Forms.PictureBox pictureBox94;
+        private System.Windows.Forms.PictureBox pictureBox98;
+        private System.Windows.Forms.PictureBox pictureBox99;
+        private System.Windows.Forms.PictureBox pictureBox100;
+        private System.Windows.Forms.PictureBox pictureBox101;
+        private System.Windows.Forms.PictureBox pictureBox102;
+        private System.Windows.Forms.PictureBox pictureBox103;
+        private System.Windows.Forms.PictureBox pictureBox104;
+        private System.Windows.Forms.PictureBox pictureBox48;
     }
 }

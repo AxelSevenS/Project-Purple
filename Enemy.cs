@@ -26,8 +26,6 @@ namespace Plateformeur
             this.pointB = pointB;
 
             Reset();
-
-            Animation();
         }
 
         public Enemy(PictureBox picture, Level level, int width) : this(picture, level, picture.Left - width + picture.Width, picture.Left + width - picture.Width * 2)
@@ -54,6 +52,8 @@ namespace Plateformeur
             {
                 AliveUpdate();
             }
+
+            Animation();
 
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +15,10 @@ namespace Plateformeur
 
         public Label scoreLabel;
         public Player player;
+        public Goal goal;
         public List<Enemy> enemies = new List<Enemy>();
         public List<Coin> coins = new List<Coin>();
+        public List<Block> blocks = new List<Block>();
         public List<Platform> platforms = new List<Platform>();
         public List<Wall> walls = new List<Wall>();
         public List<Ceiling> ceilings = new List<Ceiling>();
@@ -30,6 +33,7 @@ namespace Plateformeur
 
             scoreLabel = null;
             player = null;
+            goal = null;
             enemies.Clear();
             coins.Clear();
             platforms.Clear();
@@ -38,17 +42,24 @@ namespace Plateformeur
 
             foreach (Control control in form.Controls)
             {
+                SetControl(control);
+
                 foreach (Control child in control.Controls)
                 {
                     SetControl(child);
 
                 }
             }
+
+            form.MaximumSize = form.MinimumSize;
         }
 
         private void SetControl(Control control)
         {
             string tag = (string)control.Tag;
+
+            if (tag == null)
+                return;
 
             if (control is PictureBox picture)
             {
@@ -56,6 +67,10 @@ namespace Plateformeur
                 if (tag == "Player")
                 {
                     player = new Player(picture, this);
+                }
+                else if (tag == "Goal")
+                {
+                    goal = new Goal(picture, this);
                 }
                 else if (tag == "Coin")
                 {
@@ -73,17 +88,9 @@ namespace Plateformeur
                     int width = split.Length > 1 ? int.Parse(split[1]) : 100;
                     enemies.Add(new Goomba(picture, this, width));
                 }
-                else if (tag == "Wall")
+                else if (tag == "Block")
                 {
-                    walls.Add(new Wall(picture, this));
-                }
-                else if (tag == "Ceiling")
-                {
-                    ceilings.Add(new Ceiling(picture, this));
-                }
-                else if (tag == "Ground")
-                {
-                    platforms.Add(new Platform(picture, this));
+                    blocks.Add(new Block(picture, this));
                 }
 
             }
@@ -127,33 +134,10 @@ namespace Plateformeur
             if (player.Left > form.Width * 0.75)
                 OriginShift();
 
+            foreach (Enemy enemy in enemies)
+                enemy.Update();
+
             player.Update();
-
-            try
-            {
-                foreach (Coin coin in coins)
-                {
-                    if (Utility.SqrDistance(coin.picture.Location, player.picture.Location) > 1000)
-                        continue;
-
-                    coin.Interact(player);
-                }
-            }
-            catch (Exception) { }
-
-            try
-            {
-                foreach (Enemy enemy in enemies)
-                {
-                    enemy.Update();
-
-                    if (Utility.SqrDistance(enemy.picture.Location, player.picture.Location) > 1000)
-                        continue;
-
-                    enemy.Interact(player);
-                }
-            }
-            catch (Exception) { }
 
         }
 
@@ -176,18 +160,9 @@ namespace Plateformeur
 
         private void OriginShift(int increment)
         {
-
-            foreach (Wall wall in walls)
+            foreach (Block block in blocks)
             {
-                wall.Left -= increment;
-            }
-            foreach (Ceiling ceiling in ceilings)
-            {
-                ceiling.Left -= increment;
-            }
-            foreach (Platform platform in platforms)
-            {
-                platform.Left -= increment;
+                block.Left -= increment;
             }
             foreach (Coin coin in coins)
             {
@@ -199,6 +174,7 @@ namespace Plateformeur
                 enemy.pointA -= increment;
                 enemy.pointB -= increment;
             }
+            goal.Left -= increment;
             player.Left -= increment;
 
             totalOriginShift -= increment;

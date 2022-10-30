@@ -73,6 +73,16 @@ namespace Plateformeur.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flag_pole {
+            get {
+                object obj = ResourceManager.GetObject("flag_pole", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap goomba1 {
             get {
                 object obj = ResourceManager.GetObject("goomba1", resourceCulture);
@@ -246,6 +256,26 @@ namespace Plateformeur.Properties {
         internal static System.Drawing.Bitmap marioRightJump {
             get {
                 object obj = ResourceManager.GetObject("marioRightJump", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap marioWin {
+            get {
+                object obj = ResourceManager.GetObject("marioWin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

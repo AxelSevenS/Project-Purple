@@ -14,6 +14,8 @@ namespace Plateformeur
         private bool inShell;
         private int direction;
         private int gravity;
+        
+        private int animState = 1;
 
         protected override int speed => 1;
 
@@ -84,34 +86,42 @@ namespace Plateformeur
             }
         }
 
-        protected override async void Animation()
+        protected override void Animation()
         {
-            bool animState = false;
-            while (!dead)
+            if (dead)
+                return;
+            
+            if (inShell)
             {
-                if (inShell)
+                picture.Image = Resources.koopaShell;
+            }
+            else
+            {
+                const int cycleLength = 20;
+                
+                if (Left < (toPointB ? pointB : pointA))
                 {
-                    picture.Image = Resources.koopaShell;
+                    picture.Image = animState < cycleLength ? Resources.koopaRight1 : Resources.koopaRight2;
                 }
                 else
                 {
-                    if (toPointB)
-                    {
-                        picture.Image = animState ? Resources.koopaRight1 : Resources.koopaRight2;
-                    }
-                    else
-                    {
-                        picture.Image = animState ? Resources.koopaLeft1 : Resources.koopaLeft2;
-                    }
-                    animState = !animState;
+                    picture.Image = animState < cycleLength ? Resources.koopaLeft1 : Resources.koopaLeft2;
                 }
-                await Task.Delay(200);
+                
+                if (animState >= cycleLength*2)
+                    animState = 1;
+                else
+                    animState++;
             }
         }
 
         public override void Kill()
         {
+            if (dead)
+                return;
+
             dead = true;
+            level.player.score += 5;
             picture.Visible = false;
         }
 
